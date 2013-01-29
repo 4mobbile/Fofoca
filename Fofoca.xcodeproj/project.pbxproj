@@ -66,10 +66,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2342863F16B8997300F05F6F /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
 		39E652EF16B74F7D00A5A37C = {
 			isa = PBXGroup;
 			children = (
 				39E6530416B74F7D00A5A37C /* Fofoca */,
+				2342863F16B8997300F05F6F /* Libraries */,
 				39E652FD16B74F7D00A5A37C /* Frameworks */,
 				39E652FB16B74F7D00A5A37C /* Products */,
 			);
