@@ -26,4 +26,31 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+}
+
+
+#pragma mark - IBAction
+
+- (IBAction)goToNoticias:(id)sender {
+    [self performSegueWithIdentifier:@"segueHomeToNoticias" sender:nil];
+}
+
+- (IBAction)goToNovelas:(id)sender {
+    [self performSegueWithIdentifier:@"segueHomeToNovelas" sender:nil];
+}
+
+- (IBAction)goToFotogalerias:(id)sender {
+    [self performSegueWithIdentifier:@"segueHomeToFotogaleria" sender:nil];
+}
+
+- (IBAction)goToFamosos:(id)sender {
+    [self performSegueWithIdentifier:@"segueHomeToFamosos" sender:nil];
+}
+
+- (IBAction)goToHoroscopo:(id)sender {
+    [self performSegueWithIdentifier:@"segueHomeToHoroscopo" sender:nil];
+}
 @end

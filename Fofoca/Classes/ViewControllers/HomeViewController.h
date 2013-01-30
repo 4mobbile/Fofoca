@@ -11,4 +11,11 @@
 
 @interface HomeViewController : UIViewController
 
+- (IBAction)goToNoticias:(id)sender;
+- (IBAction)goToNovelas:(id)sender;
+- (IBAction)goToFotogalerias:(id)sender;
+- (IBAction)goToFamosos:(id)sender;
+- (IBAction)goToHoroscopo:(id)sender;
+
+
 @end
