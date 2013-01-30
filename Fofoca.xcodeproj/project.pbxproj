@@ -107,6 +107,37 @@
 			path = splash;
 			sourceTree = "<group>";
 		};
+		2342864B16B89C4200F05F6F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2342864C16B89C4200F05F6F /* Categories */,
+				2342864D16B89C4200F05F6F /* Comparators */,
+				2342864E16B89C4200F05F6F /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2342864C16B89C4200F05F6F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		2342864D16B89C4200F05F6F /* Comparators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Comparators;
+			sourceTree = "<group>";
+		};
+		2342864E16B89C4200F05F6F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		39E652EF16B74F7D00A5A37C = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +169,7 @@
 		39E6530416B74F7D00A5A37C /* Fofoca */ = {
 			isa = PBXGroup;
 			children = (
+				2342864B16B89C4200F05F6F /* Classes */,
 				39E6530D16B74F7D00A5A37C /* AppDelegate.h */,
 				39E6530E16B74F7D00A5A37C /* AppDelegate.m */,
 				39E6531616B74F7D00A5A37C /* MainStoryboard_iPhone.storyboard */,
