@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2342864816B89B1C00F05F6F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2342864516B89B1C00F05F6F /* Default-568h@2x.png */; };
+		2342864916B89B1C00F05F6F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2342864616B89B1C00F05F6F /* Default.png */; };
+		2342864A16B89B1C00F05F6F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2342864716B89B1C00F05F6F /* Default@2x.png */; };
 		39E652FF16B74F7D00A5A37C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E652FE16B74F7D00A5A37C /* UIKit.framework */; };
 		39E6530116B74F7D00A5A37C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E6530016B74F7D00A5A37C /* Foundation.framework */; };
 		39E6530316B74F7D00A5A37C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E6530216B74F7D00A5A37C /* CoreGraphics.framework */; };
 		39E6530916B74F7D00A5A37C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39E6530716B74F7D00A5A37C /* InfoPlist.strings */; };
 		39E6530B16B74F7D00A5A37C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E6530A16B74F7D00A5A37C /* main.m */; };
 		39E6530F16B74F7D00A5A37C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E6530E16B74F7D00A5A37C /* AppDelegate.m */; };
-		39E6531116B74F7D00A5A37C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E6531016B74F7D00A5A37C /* Default.png */; };
-		39E6531316B74F7D00A5A37C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E6531216B74F7D00A5A37C /* Default@2x.png */; };
-		39E6531516B74F7D00A5A37C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E6531416B74F7D00A5A37C /* Default-568h@2x.png */; };
 		39E6531816B74F7D00A5A37C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E6531616B74F7D00A5A37C /* MainStoryboard_iPhone.storyboard */; };
 		39E6531B16B74F7D00A5A37C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E6531916B74F7D00A5A37C /* MainStoryboard_iPad.storyboard */; };
 		39E6531E16B74F7D00A5A37C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E6531D16B74F7D00A5A37C /* FirstViewController.m */; };
@@ -27,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2342864516B89B1C00F05F6F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2342864616B89B1C00F05F6F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2342864716B89B1C00F05F6F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		39E652FA16B74F7D00A5A37C /* Fofoca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fofoca.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E652FE16B74F7D00A5A37C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		39E6530016B74F7D00A5A37C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,9 +40,6 @@
 		39E6530C16B74F7D00A5A37C /* Fofoca-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fofoca-Prefix.pch"; sourceTree = "<group>"; };
 		39E6530D16B74F7D00A5A37C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		39E6530E16B74F7D00A5A37C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		39E6531016B74F7D00A5A37C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../../Default.png; sourceTree = "<group>"; };
-		39E6531216B74F7D00A5A37C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../../Default@2x.png"; sourceTree = "<group>"; };
-		39E6531416B74F7D00A5A37C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../Default-568h@2x.png"; sourceTree = "<group>"; };
 		39E6531716B74F7D00A5A37C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		39E6531A16B74F7D00A5A37C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		39E6531C16B74F7D00A5A37C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
@@ -71,6 +71,40 @@
 			children = (
 			);
 			path = Libraries;
+			sourceTree = "<group>";
+		};
+		2342864116B89B1C00F05F6F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2342864216B89B1C00F05F6F /* menu */,
+				2342864316B89B1C00F05F6F /* navbar */,
+				2342864416B89B1C00F05F6F /* splash */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		2342864216B89B1C00F05F6F /* menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = menu;
+			sourceTree = "<group>";
+		};
+		2342864316B89B1C00F05F6F /* navbar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = navbar;
+			sourceTree = "<group>";
+		};
+		2342864416B89B1C00F05F6F /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				2342864516B89B1C00F05F6F /* Default-568h@2x.png */,
+				2342864616B89B1C00F05F6F /* Default.png */,
+				2342864716B89B1C00F05F6F /* Default@2x.png */,
+			);
+			path = splash;
 			sourceTree = "<group>";
 		};
 		39E652EF16B74F7D00A5A37C = {
@@ -124,47 +158,13 @@
 		39E6530516B74F7D00A5A37C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE44FEE316B758BD00233A31 /* Images */,
+				2342864116B89B1C00F05F6F /* Images */,
 				39E6530616B74F7D00A5A37C /* Fofoca-Info.plist */,
 				39E6530716B74F7D00A5A37C /* InfoPlist.strings */,
 				39E6530A16B74F7D00A5A37C /* main.m */,
 				39E6530C16B74F7D00A5A37C /* Fofoca-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CE44FEE316B758BD00233A31 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				CE44FEE416B758BD00233A31 /* menu */,
-				CE44FEE516B758BD00233A31 /* navbar */,
-				CE44FEE616B758BD00233A31 /* splash */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		CE44FEE416B758BD00233A31 /* menu */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = menu;
-			sourceTree = "<group>";
-		};
-		CE44FEE516B758BD00233A31 /* navbar */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = navbar;
-			sourceTree = "<group>";
-		};
-		CE44FEE616B758BD00233A31 /* splash */ = {
-			isa = PBXGroup;
-			children = (
-				39E6531016B74F7D00A5A37C /* Default.png */,
-				39E6531216B74F7D00A5A37C /* Default@2x.png */,
-				39E6531416B74F7D00A5A37C /* Default-568h@2x.png */,
-			);
-			path = splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,15 +219,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				39E6530916B74F7D00A5A37C /* InfoPlist.strings in Resources */,
-				39E6531116B74F7D00A5A37C /* Default.png in Resources */,
-				39E6531316B74F7D00A5A37C /* Default@2x.png in Resources */,
-				39E6531516B74F7D00A5A37C /* Default-568h@2x.png in Resources */,
 				39E6531816B74F7D00A5A37C /* MainStoryboard_iPhone.storyboard in Resources */,
 				39E6531B16B74F7D00A5A37C /* MainStoryboard_iPad.storyboard in Resources */,
 				39E6532016B74F7D00A5A37C /* first.png in Resources */,
 				39E6532216B74F7D00A5A37C /* first@2x.png in Resources */,
 				39E6532716B74F7E00A5A37C /* second.png in Resources */,
 				39E6532916B74F7E00A5A37C /* second@2x.png in Resources */,
+				2342864816B89B1C00F05F6F /* Default-568h@2x.png in Resources */,
+				2342864916B89B1C00F05F6F /* Default.png in Resources */,
+				2342864A16B89B1C00F05F6F /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
