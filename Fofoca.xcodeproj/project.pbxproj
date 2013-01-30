@@ -24,6 +24,7 @@
 		39E6530F16B74F7D00A5A37C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E6530E16B74F7D00A5A37C /* AppDelegate.m */; };
 		39E6531816B74F7D00A5A37C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E6531616B74F7D00A5A37C /* MainStoryboard_iPhone.storyboard */; };
 		39E6531B16B74F7D00A5A37C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E6531916B74F7D00A5A37C /* MainStoryboard_iPad.storyboard */; };
+		CE985BBF16B8B5D900AEB045 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE985BBE16B8B5D900AEB045 /* NewsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		39E6531716B74F7D00A5A37C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		39E6531A16B74F7D00A5A37C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		CE985BBB16B8A78000AEB045 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		CE985BBD16B8B5D900AEB045 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		CE985BBE16B8B5D900AEB045 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 				2342865016B89D5E00F05F6F /* HomeViewController.m */,
 				2342865116B89D5E00F05F6F /* NovelasViewController.h */,
 				2342865216B89D5E00F05F6F /* NovelasViewController.m */,
+				CE985BBD16B8B5D900AEB045 /* NewsViewController.h */,
+				CE985BBE16B8B5D900AEB045 /* NewsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 				39E6530F16B74F7D00A5A37C /* AppDelegate.m in Sources */,
 				2342865316B89D5E00F05F6F /* HomeViewController.m in Sources */,
 				2342865416B89D5E00F05F6F /* NovelasViewController.m in Sources */,
+				CE985BBF16B8B5D900AEB045 /* NewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
