@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 4Mobile. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "NovelasViewController.h"
 
-@interface SecondViewController ()
+@interface NovelasViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation NovelasViewController
 
 - (void)viewDidLoad
 {
