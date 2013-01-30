@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Global.h"
 
-@interface FirstViewController : UIViewController
+@interface HomeViewController : UIViewController
 
 @end
