@@ -59,7 +59,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:[tableView indexPathForSelectedRow] animated:NO];
-    [self performSegueWithIdentifier:@"segueSelectedNews" sender:indexPath];
+    [self performSegueWithIdentifier:@"segueToOpenNews" sender:indexPath];
 }
 
 @end

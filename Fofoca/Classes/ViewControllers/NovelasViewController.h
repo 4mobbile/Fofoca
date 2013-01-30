@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NovelasViewController : UIViewController
+@interface NovelasViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
