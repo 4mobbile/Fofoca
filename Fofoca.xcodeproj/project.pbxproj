@@ -194,9 +194,9 @@
 		39E6530416B74F7D00A5A37C /* Fofoca */ = {
 			isa = PBXGroup;
 			children = (
-				2342864B16B89C4200F05F6F /* Classes */,
 				39E6530D16B74F7D00A5A37C /* AppDelegate.h */,
 				39E6530E16B74F7D00A5A37C /* AppDelegate.m */,
+				2342864B16B89C4200F05F6F /* Classes */,
 				39E6530516B74F7D00A5A37C /* Supporting Files */,
 			);
 			path = Fofoca;
