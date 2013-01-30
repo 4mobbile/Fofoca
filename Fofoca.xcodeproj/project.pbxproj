@@ -50,6 +50,7 @@
 		39E6530E16B74F7D00A5A37C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		39E6531716B74F7D00A5A37C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		39E6531A16B74F7D00A5A37C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		CE985BBB16B8A78000AEB045 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +195,7 @@
 		39E6530416B74F7D00A5A37C /* Fofoca */ = {
 			isa = PBXGroup;
 			children = (
+				CE985BBB16B8A78000AEB045 /* Global.h */,
 				39E6530D16B74F7D00A5A37C /* AppDelegate.h */,
 				39E6530E16B74F7D00A5A37C /* AppDelegate.m */,
 				2342864B16B89C4200F05F6F /* Classes */,
