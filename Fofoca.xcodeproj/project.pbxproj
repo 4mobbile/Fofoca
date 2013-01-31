@@ -36,6 +36,7 @@
 		39E2DAE916BA00C500665601 /* search_field@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E2DAD516BA00C500665601 /* search_field@2x.png */; };
 		39E2DAEA16BA00C500665601 /* search_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E2DAD616BA00C500665601 /* search_text.png */; };
 		39E2DAEB16BA00C500665601 /* search_text@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E2DAD716BA00C500665601 /* search_text@2x.png */; };
+		39E2DAEE16BA014600665601 /* FotogaleriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E2DAED16BA014600665601 /* FotogaleriaViewController.m */; };
 		39E652FF16B74F7D00A5A37C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E652FE16B74F7D00A5A37C /* UIKit.framework */; };
 		39E6530116B74F7D00A5A37C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E6530016B74F7D00A5A37C /* Foundation.framework */; };
 		39E6530316B74F7D00A5A37C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E6530216B74F7D00A5A37C /* CoreGraphics.framework */; };
@@ -80,6 +81,8 @@
 		39E2DAD516BA00C500665601 /* search_field@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_field@2x.png"; sourceTree = "<group>"; };
 		39E2DAD616BA00C500665601 /* search_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_text.png; sourceTree = "<group>"; };
 		39E2DAD716BA00C500665601 /* search_text@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_text@2x.png"; sourceTree = "<group>"; };
+		39E2DAEC16BA014600665601 /* FotogaleriaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FotogaleriaViewController.h; sourceTree = "<group>"; };
+		39E2DAED16BA014600665601 /* FotogaleriaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FotogaleriaViewController.m; sourceTree = "<group>"; };
 		39E652FA16B74F7D00A5A37C /* Fofoca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fofoca.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E652FE16B74F7D00A5A37C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		39E6530016B74F7D00A5A37C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -189,6 +192,8 @@
 				2342865216B89D5E00F05F6F /* NovelasViewController.m */,
 				CE985BBD16B8B5D900AEB045 /* NewsViewController.h */,
 				CE985BBE16B8B5D900AEB045 /* NewsViewController.m */,
+				39E2DAEC16BA014600665601 /* FotogaleriaViewController.h */,
+				39E2DAED16BA014600665601 /* FotogaleriaViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -400,6 +405,7 @@
 				2342865416B89D5E00F05F6F /* NovelasViewController.m in Sources */,
 				CE985BBF16B8B5D900AEB045 /* NewsViewController.m in Sources */,
 				CEEB6D1F16B9F370004C8A8C /* EmissoraModel.m in Sources */,
+				39E2DAEE16BA014600665601 /* FotogaleriaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
