@@ -56,10 +56,10 @@
 		CEEB6D5416BA0E44004C8A8C /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEB6D3F16BA0E44004C8A8C /* libGoogleAnalytics.a */; };
 		CEEB6D5516BA0E44004C8A8C /* libGoogleAnalytics_debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEB6D4016BA0E44004C8A8C /* libGoogleAnalytics_debug.a */; };
 		CEEB6D5616BA0E44004C8A8C /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = CEEB6D4216BA0E44004C8A8C /* CHANGELOG.md */; };
-		CEEB6D5716BA0E44004C8A8C /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D4416BA0E44004C8A8C /* JSONKit.m */; };
+		CEEB6D5716BA0E44004C8A8C /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D4416BA0E44004C8A8C /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		CEEB6D5816BA0E44004C8A8C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CEEB6D4516BA0E44004C8A8C /* README.md */; };
 		CEEB6D5916BA0E44004C8A8C /* NSDate+HumanInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D4816BA0E44004C8A8C /* NSDate+HumanInterval.m */; };
-		CEEB6D5A16BA0E44004C8A8C /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D4B16BA0E44004C8A8C /* NSString+MD5.m */; };
+		CEEB6D5A16BA0E44004C8A8C /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D4B16BA0E44004C8A8C /* NSString+MD5.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		CEEB6D5B16BA0E44004C8A8C /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEEB6D4C16BA0E44004C8A8C /* README.txt */; };
 		CEEB6D5C16BA0E44004C8A8C /* YQL.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D4F16BA0E44004C8A8C /* YQL.m */; };
 /* End PBXBuildFile section */
