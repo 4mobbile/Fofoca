@@ -26,6 +26,7 @@
 		39E6531B16B74F7D00A5A37C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E6531916B74F7D00A5A37C /* MainStoryboard_iPad.storyboard */; };
 		CE985BBF16B8B5D900AEB045 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE985BBE16B8B5D900AEB045 /* NewsViewController.m */; };
 		CEEB6D1F16B9F370004C8A8C /* EmissoraModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D1E16B9F370004C8A8C /* EmissoraModel.m */; };
+		CEEB6D2216B9F47F004C8A8C /* EmissoraModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D2116B9F47F004C8A8C /* EmissoraModel+Parse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,8 @@
 		CE985BBE16B8B5D900AEB045 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		CEEB6D1D16B9F370004C8A8C /* EmissoraModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmissoraModel.h; sourceTree = "<group>"; };
 		CEEB6D1E16B9F370004C8A8C /* EmissoraModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmissoraModel.m; sourceTree = "<group>"; };
+		CEEB6D2016B9F47F004C8A8C /* EmissoraModel+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EmissoraModel+Parse.h"; sourceTree = "<group>"; };
+		CEEB6D2116B9F47F004C8A8C /* EmissoraModel+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EmissoraModel+Parse.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +234,8 @@
 			children = (
 				CEEB6D1D16B9F370004C8A8C /* EmissoraModel.h */,
 				CEEB6D1E16B9F370004C8A8C /* EmissoraModel.m */,
+				CEEB6D2016B9F47F004C8A8C /* EmissoraModel+Parse.h */,
+				CEEB6D2116B9F47F004C8A8C /* EmissoraModel+Parse.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 				2342865416B89D5E00F05F6F /* NovelasViewController.m in Sources */,
 				CE985BBF16B8B5D900AEB045 /* NewsViewController.m in Sources */,
 				CEEB6D1F16B9F370004C8A8C /* EmissoraModel.m in Sources */,
+				CEEB6D2216B9F47F004C8A8C /* EmissoraModel+Parse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
