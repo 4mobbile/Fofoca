@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="K6Z-Y4-aF5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="K6Z-Y4-aF5">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -110,16 +110,46 @@
             </objects>
             <point key="canvasLocation" x="497" y="112"/>
         </scene>
-        <!--View Controller - Fotogaleria-->
+        <!--Fotogaleria View Controller - Fotogaleria-->
         <scene sceneID="OcA-CQ-H0V">
             <objects>
-                <viewController id="xhU-Cj-zwh" sceneMemberID="viewController">
+                <viewController id="xhU-Cj-zwh" customClass="FotogaleriaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4eB-qi-6on">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="search_text.png" id="cAL-NP-oig">
+                                <rect key="frame" x="0.0" y="0.0" width="92" height="25"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="R5c-gc-cdf">
+                                <rect key="frame" x="105" y="0.0" width="195" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="xhU-Cj-zwh" id="FfK-Eu-x5e"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="divider_bar.png" id="gbh-xa-QB4">
+                                <rect key="frame" x="10" y="38" width="300" height="7"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Fotogaleria" id="5hf-lq-u6T"/>
+                    <navigationItem key="navigationItem" title="Fotogaleria" id="5hf-lq-u6T">
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="DtK-qP-UmT">
+                            <connections>
+                                <action selector="shareButtonTapped:" destination="xhU-Cj-zwh" id="FKL-nq-EDs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="navItem" destination="5hf-lq-u6T" id="xOH-ch-7ln"/>
+                        <outlet property="shareButton" destination="DtK-qP-UmT" id="eWm-kk-5nd"/>
+                        <outlet property="textField" destination="R5c-gc-cdf" id="bQb-c9-m80"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yDp-pN-290" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -286,26 +316,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="divider_bar.png" width="697" height="13"/>
         <image name="first" width="16" height="16"/>
+        <image name="search_text.png" width="97" height="25"/>
     </resources>
-    <classes>
-        <class className="HomeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="goToFamosos:"/>
-                <relationship kind="action" name="goToFotogalerias:"/>
-                <relationship kind="action" name="goToHoroscopo:"/>
-                <relationship kind="action" name="goToNoticias:"/>
-                <relationship kind="action" name="goToNovelas:"/>
-            </relationships>
-        </class>
-        <class className="NewsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsViewController.h"/>
-        </class>
-        <class className="NovelasViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NovelasViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
