@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Flickr.h"
+#import "FlickrPhoto.h"
 
 @interface FotogaleriaViewController : UIViewController 
+
+@property(nonatomic, strong) NSMutableDictionary *searchResults;
+@property(nonatomic, strong) NSMutableArray *searches;
+@property(nonatomic, strong) Flickr *flickr;
 
 @end
