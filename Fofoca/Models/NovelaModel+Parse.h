@@ -7,7 +7,10 @@
 //
 
 #import "NovelaModel.h"
+#import "Global.h"
 
 @interface NovelaModel (Parse)
+
++ (NSArray *)parseNovela;
 
 @end

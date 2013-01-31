@@ -10,4 +10,7 @@
 
 @interface NovelaModel : NSObject
 
+@property (nonatomic, copy) NSString *novelaName;
+@property (nonatomic, copy) NSArray *capitulos;
+
 @end
