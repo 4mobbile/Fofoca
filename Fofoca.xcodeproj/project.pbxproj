@@ -27,6 +27,8 @@
 		CE985BBF16B8B5D900AEB045 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE985BBE16B8B5D900AEB045 /* NewsViewController.m */; };
 		CEEB6D1F16B9F370004C8A8C /* EmissoraModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D1E16B9F370004C8A8C /* EmissoraModel.m */; };
 		CEEB6D2216B9F47F004C8A8C /* EmissoraModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D2116B9F47F004C8A8C /* EmissoraModel+Parse.m */; };
+		CEEB6D2516B9F797004C8A8C /* NovelaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D2416B9F797004C8A8C /* NovelaModel.m */; };
+		CEEB6D2816B9F7AF004C8A8C /* NovelaModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D2716B9F7AF004C8A8C /* NovelaModel+Parse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,10 @@
 		CEEB6D1E16B9F370004C8A8C /* EmissoraModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmissoraModel.m; sourceTree = "<group>"; };
 		CEEB6D2016B9F47F004C8A8C /* EmissoraModel+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EmissoraModel+Parse.h"; sourceTree = "<group>"; };
 		CEEB6D2116B9F47F004C8A8C /* EmissoraModel+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EmissoraModel+Parse.m"; sourceTree = "<group>"; };
+		CEEB6D2316B9F797004C8A8C /* NovelaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NovelaModel.h; sourceTree = "<group>"; };
+		CEEB6D2416B9F797004C8A8C /* NovelaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NovelaModel.m; sourceTree = "<group>"; };
+		CEEB6D2616B9F7AF004C8A8C /* NovelaModel+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NovelaModel+Parse.h"; sourceTree = "<group>"; };
+		CEEB6D2716B9F7AF004C8A8C /* NovelaModel+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NovelaModel+Parse.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +242,10 @@
 				CEEB6D1E16B9F370004C8A8C /* EmissoraModel.m */,
 				CEEB6D2016B9F47F004C8A8C /* EmissoraModel+Parse.h */,
 				CEEB6D2116B9F47F004C8A8C /* EmissoraModel+Parse.m */,
+				CEEB6D2316B9F797004C8A8C /* NovelaModel.h */,
+				CEEB6D2416B9F797004C8A8C /* NovelaModel.m */,
+				CEEB6D2616B9F7AF004C8A8C /* NovelaModel+Parse.h */,
+				CEEB6D2716B9F7AF004C8A8C /* NovelaModel+Parse.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -318,6 +328,8 @@
 				CE985BBF16B8B5D900AEB045 /* NewsViewController.m in Sources */,
 				CEEB6D1F16B9F370004C8A8C /* EmissoraModel.m in Sources */,
 				CEEB6D2216B9F47F004C8A8C /* EmissoraModel+Parse.m in Sources */,
+				CEEB6D2516B9F797004C8A8C /* NovelaModel.m in Sources */,
+				CEEB6D2816B9F7AF004C8A8C /* NovelaModel+Parse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
