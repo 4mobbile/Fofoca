@@ -21,4 +21,4 @@
 //---------------------------------------------------------------------------------------------------------
 // YQL
 //---------------------------------------------------------------------------------------------------------
-#define K_YQL_NOVELAS_FUXICO @"http://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20FROM%20html%20WHERE%20url%20%3D%20%22https%3A%2F%2Fofuxico.terra.com.br%2Fcanais.html%22%20AND%20xpath%20%3D%20%22%2F%2Fdiv%5B%40class%20%3D%20'canal'%5D%22%20AND%20charset%20%3D%20%22iso-8859-1%22&format=json&callback="
+#define K_YQL_NOVELAS_FUXICO @"http://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20FROM%20html%20WHERE%20url%20%3D%20%22https%3A%2F%2Fofuxico.terra.com.br%2Fcanais.html%22%20AND%20xpath%20%3D%20%22%2F%2Fdiv%5B%40class%20%3D%20'canal'%5D%22%20AND%20charset%20%3D%20%22utf-8%22&format=json&callback="
