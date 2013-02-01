@@ -48,6 +48,45 @@
 		CED4A68516BB4D3800269A5C /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68416BB4D3800269A5C /* NewsModel.m */; };
 		CED4A68816BB4DC000269A5C /* NewsModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68716BB4DC000269A5C /* NewsModel+Parse.m */; };
 		CED4A68B16BB4F2A00269A5C /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68A16BB4F2A00269A5C /* NSString+HTML.m */; };
+		CED4A6E716BB514D00269A5C /* ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68E16BB514D00269A5C /* ActiveRecord.m */; };
+		CED4A6E816BB514D00269A5C /* ARBaseRelationship.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69116BB514D00269A5C /* ARBaseRelationship.m */; };
+		CED4A6E916BB514D00269A5C /* ARColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69316BB514D00269A5C /* ARColumn.m */; };
+		CED4A6EA16BB514D00269A5C /* ARDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69616BB514D00269A5C /* ARDatabaseManager.m */; };
+		CED4A6EB16BB514D00269A5C /* ARError.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69916BB514D00269A5C /* ARError.m */; };
+		CED4A6EC16BB514D00269A5C /* ARException.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69C16BB514D00269A5C /* ARException.m */; };
+		CED4A6ED16BB514D00269A5C /* ARLazyFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69F16BB514D00269A5C /* ARLazyFetcher.m */; };
+		CED4A6EE16BB514D00269A5C /* ARRelationBelongsTo.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6A316BB514D00269A5C /* ARRelationBelongsTo.m */; };
+		CED4A6EF16BB514D00269A5C /* ARRelationHasMany.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6A516BB514D00269A5C /* ARRelationHasMany.m */; };
+		CED4A6F016BB514D00269A5C /* ARRelationHasManyThrough.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6A716BB514D00269A5C /* ARRelationHasManyThrough.m */; };
+		CED4A6F116BB514D00269A5C /* ARSchemaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6AB16BB514D00269A5C /* ARSchemaManager.m */; };
+		CED4A6F216BB514D00269A5C /* ARSQLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6AD16BB514D00269A5C /* ARSQLBuilder.m */; };
+		CED4A6F316BB514D00269A5C /* ARValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6AF16BB514D00269A5C /* ARValidation.m */; };
+		CED4A6F416BB514D00269A5C /* ARValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6B216BB514D00269A5C /* ARValidator.m */; };
+		CED4A6F516BB514D00269A5C /* ARValidatorPresence.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6B416BB514D00269A5C /* ARValidatorPresence.m */; };
+		CED4A6F616BB514D00269A5C /* ARValidatorUniqueness.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6B716BB514D00269A5C /* ARValidatorUniqueness.m */; };
+		CED4A6F716BB514D00269A5C /* sqlite3_unicode.c in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6BA16BB514D00269A5C /* sqlite3_unicode.c */; };
+		CED4A6F816BB514D00269A5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED4A6BC16BB514D00269A5C /* InfoPlist.strings */; };
+		CED4A6F916BB514D00269A5C /* iActiveRecord-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CED4A6BE16BB514D00269A5C /* iActiveRecord-Info.plist */; };
+		CED4A6FA16BB514D00269A5C /* NSArray+objectsAccessors.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6C116BB514D00269A5C /* NSArray+objectsAccessors.m */; };
+		CED4A6FB16BB514D00269A5C /* NSArray+toSql.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6C316BB514D00269A5C /* NSArray+toSql.m */; };
+		CED4A6FC16BB514D00269A5C /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6C516BB514D00269A5C /* NSData+Base64.m */; };
+		CED4A6FD16BB514D00269A5C /* NSData+isPresented.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6C716BB514D00269A5C /* NSData+isPresented.m */; };
+		CED4A6FE16BB514D00269A5C /* NSData+sqlRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6C916BB514D00269A5C /* NSData+sqlRepresentation.m */; };
+		CED4A6FF16BB514D00269A5C /* NSDate+isPresented.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6CB16BB514D00269A5C /* NSDate+isPresented.m */; };
+		CED4A70016BB514D00269A5C /* NSDate+sqlRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6CD16BB514D00269A5C /* NSDate+sqlRepresentation.m */; };
+		CED4A70116BB514D00269A5C /* NSDecimalNumber+isPresented.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6CF16BB514D00269A5C /* NSDecimalNumber+isPresented.m */; };
+		CED4A70216BB514D00269A5C /* NSDecimalNumber+sqlRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6D116BB514D00269A5C /* NSDecimalNumber+sqlRepresentation.m */; };
+		CED4A70316BB514D00269A5C /* NSMutableDictionary+valueToArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6D316BB514D00269A5C /* NSMutableDictionary+valueToArray.m */; };
+		CED4A70416BB514D00269A5C /* NSNumber+isPresented.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6D516BB514D00269A5C /* NSNumber+isPresented.m */; };
+		CED4A70516BB514D00269A5C /* NSNumber+sqlRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6D716BB514D00269A5C /* NSNumber+sqlRepresentation.m */; };
+		CED4A70616BB514D00269A5C /* NSSet+toSql.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6D916BB514D00269A5C /* NSSet+toSql.m */; };
+		CED4A70716BB514D00269A5C /* NSString+isPresented.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6DB16BB514D00269A5C /* NSString+isPresented.m */; };
+		CED4A70816BB514D00269A5C /* NSString+lowercaseFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6DD16BB514D00269A5C /* NSString+lowercaseFirst.m */; };
+		CED4A70916BB514D00269A5C /* NSString+quotedString.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6DF16BB514D00269A5C /* NSString+quotedString.m */; };
+		CED4A70A16BB514D00269A5C /* NSString+sqlRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6E116BB514D00269A5C /* NSString+sqlRepresentation.m */; };
+		CED4A70B16BB514D00269A5C /* NSString+stringWithEscapedQuote.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6E316BB514D00269A5C /* NSString+stringWithEscapedQuote.m */; };
+		CED4A70C16BB514D00269A5C /* NSString+uppercaseFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6E516BB514D00269A5C /* NSString+uppercaseFirst.m */; };
+		CED4A70D16BB514D00269A5C /* octocat.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4A6E616BB514D00269A5C /* octocat.png */; };
 		CEEB6D1F16B9F370004C8A8C /* EmissoraModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D1E16B9F370004C8A8C /* EmissoraModel.m */; };
 		CEEB6D2216B9F47F004C8A8C /* EmissoraModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D2116B9F47F004C8A8C /* EmissoraModel+Parse.m */; };
 		CEEB6D2516B9F797004C8A8C /* NovelaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D2416B9F797004C8A8C /* NovelaModel.m */; };
@@ -126,6 +165,94 @@
 		CED4A68716BB4DC000269A5C /* NewsModel+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NewsModel+Parse.m"; sourceTree = "<group>"; };
 		CED4A68916BB4F2A00269A5C /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
 		CED4A68A16BB4F2A00269A5C /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		CED4A68D16BB514D00269A5C /* ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveRecord.h; sourceTree = "<group>"; };
+		CED4A68E16BB514D00269A5C /* ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveRecord.m; sourceTree = "<group>"; };
+		CED4A68F16BB514D00269A5C /* ActiveRecord_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveRecord_Private.h; sourceTree = "<group>"; };
+		CED4A69016BB514D00269A5C /* ARBaseRelationship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARBaseRelationship.h; sourceTree = "<group>"; };
+		CED4A69116BB514D00269A5C /* ARBaseRelationship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARBaseRelationship.m; sourceTree = "<group>"; };
+		CED4A69216BB514D00269A5C /* ARColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARColumn.h; sourceTree = "<group>"; };
+		CED4A69316BB514D00269A5C /* ARColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARColumn.m; sourceTree = "<group>"; };
+		CED4A69416BB514D00269A5C /* ARColumn_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARColumn_Private.h; sourceTree = "<group>"; };
+		CED4A69516BB514D00269A5C /* ARDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDatabaseManager.h; sourceTree = "<group>"; };
+		CED4A69616BB514D00269A5C /* ARDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDatabaseManager.m; sourceTree = "<group>"; };
+		CED4A69716BB514D00269A5C /* AREnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AREnum.h; sourceTree = "<group>"; };
+		CED4A69816BB514D00269A5C /* ARError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARError.h; sourceTree = "<group>"; };
+		CED4A69916BB514D00269A5C /* ARError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARError.m; sourceTree = "<group>"; };
+		CED4A69A16BB514D00269A5C /* ARErrorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARErrorHelper.h; sourceTree = "<group>"; };
+		CED4A69B16BB514D00269A5C /* ARException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARException.h; sourceTree = "<group>"; };
+		CED4A69C16BB514D00269A5C /* ARException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARException.m; sourceTree = "<group>"; };
+		CED4A69D16BB514D00269A5C /* ARIndicesMacroHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARIndicesMacroHelper.h; sourceTree = "<group>"; };
+		CED4A69E16BB514D00269A5C /* ARLazyFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLazyFetcher.h; sourceTree = "<group>"; };
+		CED4A69F16BB514D00269A5C /* ARLazyFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARLazyFetcher.m; sourceTree = "<group>"; };
+		CED4A6A016BB514D00269A5C /* ARLazyFetcher_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLazyFetcher_Private.h; sourceTree = "<group>"; };
+		CED4A6A116BB514D00269A5C /* ARPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARPropertyType.h; sourceTree = "<group>"; };
+		CED4A6A216BB514D00269A5C /* ARRelationBelongsTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARRelationBelongsTo.h; sourceTree = "<group>"; };
+		CED4A6A316BB514D00269A5C /* ARRelationBelongsTo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARRelationBelongsTo.m; sourceTree = "<group>"; };
+		CED4A6A416BB514D00269A5C /* ARRelationHasMany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARRelationHasMany.h; sourceTree = "<group>"; };
+		CED4A6A516BB514D00269A5C /* ARRelationHasMany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARRelationHasMany.m; sourceTree = "<group>"; };
+		CED4A6A616BB514D00269A5C /* ARRelationHasManyThrough.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARRelationHasManyThrough.h; sourceTree = "<group>"; };
+		CED4A6A716BB514D00269A5C /* ARRelationHasManyThrough.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARRelationHasManyThrough.m; sourceTree = "<group>"; };
+		CED4A6A816BB514D00269A5C /* ARRelationshipsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARRelationshipsHelper.h; sourceTree = "<group>"; };
+		CED4A6A916BB514D00269A5C /* ARRepresentationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARRepresentationProtocol.h; sourceTree = "<group>"; };
+		CED4A6AA16BB514D00269A5C /* ARSchemaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSchemaManager.h; sourceTree = "<group>"; };
+		CED4A6AB16BB514D00269A5C /* ARSchemaManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARSchemaManager.m; sourceTree = "<group>"; };
+		CED4A6AC16BB514D00269A5C /* ARSQLBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSQLBuilder.h; sourceTree = "<group>"; };
+		CED4A6AD16BB514D00269A5C /* ARSQLBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARSQLBuilder.m; sourceTree = "<group>"; };
+		CED4A6AE16BB514D00269A5C /* ARValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARValidation.h; sourceTree = "<group>"; };
+		CED4A6AF16BB514D00269A5C /* ARValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARValidation.m; sourceTree = "<group>"; };
+		CED4A6B016BB514D00269A5C /* ARValidationsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARValidationsHelper.h; sourceTree = "<group>"; };
+		CED4A6B116BB514D00269A5C /* ARValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARValidator.h; sourceTree = "<group>"; };
+		CED4A6B216BB514D00269A5C /* ARValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARValidator.m; sourceTree = "<group>"; };
+		CED4A6B316BB514D00269A5C /* ARValidatorPresence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARValidatorPresence.h; sourceTree = "<group>"; };
+		CED4A6B416BB514D00269A5C /* ARValidatorPresence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARValidatorPresence.m; sourceTree = "<group>"; };
+		CED4A6B516BB514D00269A5C /* ARValidatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARValidatorProtocol.h; sourceTree = "<group>"; };
+		CED4A6B616BB514D00269A5C /* ARValidatorUniqueness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARValidatorUniqueness.h; sourceTree = "<group>"; };
+		CED4A6B716BB514D00269A5C /* ARValidatorUniqueness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARValidatorUniqueness.m; sourceTree = "<group>"; };
+		CED4A6B816BB514D00269A5C /* class_getSubclasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = class_getSubclasses.h; sourceTree = "<group>"; };
+		CED4A6BA16BB514D00269A5C /* sqlite3_unicode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3_unicode.c; sourceTree = "<group>"; };
+		CED4A6BB16BB514D00269A5C /* sqlite3_unicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3_unicode.h; sourceTree = "<group>"; };
+		CED4A6BD16BB514D00269A5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CED4A6BE16BB514D00269A5C /* iActiveRecord-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iActiveRecord-Info.plist"; sourceTree = "<group>"; };
+		CED4A6BF16BB514D00269A5C /* iActiveRecord-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iActiveRecord-Prefix.pch"; sourceTree = "<group>"; };
+		CED4A6C016BB514D00269A5C /* NSArray+objectsAccessors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+objectsAccessors.h"; sourceTree = "<group>"; };
+		CED4A6C116BB514D00269A5C /* NSArray+objectsAccessors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+objectsAccessors.m"; sourceTree = "<group>"; };
+		CED4A6C216BB514D00269A5C /* NSArray+toSql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+toSql.h"; sourceTree = "<group>"; };
+		CED4A6C316BB514D00269A5C /* NSArray+toSql.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+toSql.m"; sourceTree = "<group>"; };
+		CED4A6C416BB514D00269A5C /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		CED4A6C516BB514D00269A5C /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		CED4A6C616BB514D00269A5C /* NSData+isPresented.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+isPresented.h"; sourceTree = "<group>"; };
+		CED4A6C716BB514D00269A5C /* NSData+isPresented.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+isPresented.m"; sourceTree = "<group>"; };
+		CED4A6C816BB514D00269A5C /* NSData+sqlRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+sqlRepresentation.h"; sourceTree = "<group>"; };
+		CED4A6C916BB514D00269A5C /* NSData+sqlRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+sqlRepresentation.m"; sourceTree = "<group>"; };
+		CED4A6CA16BB514D00269A5C /* NSDate+isPresented.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+isPresented.h"; sourceTree = "<group>"; };
+		CED4A6CB16BB514D00269A5C /* NSDate+isPresented.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+isPresented.m"; sourceTree = "<group>"; };
+		CED4A6CC16BB514D00269A5C /* NSDate+sqlRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+sqlRepresentation.h"; sourceTree = "<group>"; };
+		CED4A6CD16BB514D00269A5C /* NSDate+sqlRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+sqlRepresentation.m"; sourceTree = "<group>"; };
+		CED4A6CE16BB514D00269A5C /* NSDecimalNumber+isPresented.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+isPresented.h"; sourceTree = "<group>"; };
+		CED4A6CF16BB514D00269A5C /* NSDecimalNumber+isPresented.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+isPresented.m"; sourceTree = "<group>"; };
+		CED4A6D016BB514D00269A5C /* NSDecimalNumber+sqlRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+sqlRepresentation.h"; sourceTree = "<group>"; };
+		CED4A6D116BB514D00269A5C /* NSDecimalNumber+sqlRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+sqlRepresentation.m"; sourceTree = "<group>"; };
+		CED4A6D216BB514D00269A5C /* NSMutableDictionary+valueToArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+valueToArray.h"; sourceTree = "<group>"; };
+		CED4A6D316BB514D00269A5C /* NSMutableDictionary+valueToArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+valueToArray.m"; sourceTree = "<group>"; };
+		CED4A6D416BB514D00269A5C /* NSNumber+isPresented.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+isPresented.h"; sourceTree = "<group>"; };
+		CED4A6D516BB514D00269A5C /* NSNumber+isPresented.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+isPresented.m"; sourceTree = "<group>"; };
+		CED4A6D616BB514D00269A5C /* NSNumber+sqlRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+sqlRepresentation.h"; sourceTree = "<group>"; };
+		CED4A6D716BB514D00269A5C /* NSNumber+sqlRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+sqlRepresentation.m"; sourceTree = "<group>"; };
+		CED4A6D816BB514D00269A5C /* NSSet+toSql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+toSql.h"; sourceTree = "<group>"; };
+		CED4A6D916BB514D00269A5C /* NSSet+toSql.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+toSql.m"; sourceTree = "<group>"; };
+		CED4A6DA16BB514D00269A5C /* NSString+isPresented.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+isPresented.h"; sourceTree = "<group>"; };
+		CED4A6DB16BB514D00269A5C /* NSString+isPresented.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+isPresented.m"; sourceTree = "<group>"; };
+		CED4A6DC16BB514D00269A5C /* NSString+lowercaseFirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+lowercaseFirst.h"; sourceTree = "<group>"; };
+		CED4A6DD16BB514D00269A5C /* NSString+lowercaseFirst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+lowercaseFirst.m"; sourceTree = "<group>"; };
+		CED4A6DE16BB514D00269A5C /* NSString+quotedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+quotedString.h"; sourceTree = "<group>"; };
+		CED4A6DF16BB514D00269A5C /* NSString+quotedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+quotedString.m"; sourceTree = "<group>"; };
+		CED4A6E016BB514D00269A5C /* NSString+sqlRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+sqlRepresentation.h"; sourceTree = "<group>"; };
+		CED4A6E116BB514D00269A5C /* NSString+sqlRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+sqlRepresentation.m"; sourceTree = "<group>"; };
+		CED4A6E216BB514D00269A5C /* NSString+stringWithEscapedQuote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+stringWithEscapedQuote.h"; sourceTree = "<group>"; };
+		CED4A6E316BB514D00269A5C /* NSString+stringWithEscapedQuote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+stringWithEscapedQuote.m"; sourceTree = "<group>"; };
+		CED4A6E416BB514D00269A5C /* NSString+uppercaseFirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+uppercaseFirst.h"; sourceTree = "<group>"; };
+		CED4A6E516BB514D00269A5C /* NSString+uppercaseFirst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+uppercaseFirst.m"; sourceTree = "<group>"; };
+		CED4A6E616BB514D00269A5C /* octocat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octocat.png; sourceTree = "<group>"; };
 		CEEB6D1D16B9F370004C8A8C /* EmissoraModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmissoraModel.h; sourceTree = "<group>"; };
 		CEEB6D1E16B9F370004C8A8C /* EmissoraModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmissoraModel.m; sourceTree = "<group>"; };
 		CEEB6D2016B9F47F004C8A8C /* EmissoraModel+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EmissoraModel+Parse.h"; sourceTree = "<group>"; };
@@ -188,6 +315,7 @@
 		2342863F16B8997300F05F6F /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				CED4A68C16BB514D00269A5C /* iActiveRecord */,
 				CEEB6D2916BA0E44004C8A8C /* EGOCache */,
 				CEEB6D2D16BA0E44004C8A8C /* GoogleAdMobAdsSdkiOS-6.2.1 */,
 				CEEB6D3916BA0E44004C8A8C /* GoogleAnalyticsiOS-2.0b3 */,
@@ -409,6 +537,109 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		CED4A68C16BB514D00269A5C /* iActiveRecord */ = {
+			isa = PBXGroup;
+			children = (
+				CED4A68D16BB514D00269A5C /* ActiveRecord.h */,
+				CED4A68E16BB514D00269A5C /* ActiveRecord.m */,
+				CED4A68F16BB514D00269A5C /* ActiveRecord_Private.h */,
+				CED4A69016BB514D00269A5C /* ARBaseRelationship.h */,
+				CED4A69116BB514D00269A5C /* ARBaseRelationship.m */,
+				CED4A69216BB514D00269A5C /* ARColumn.h */,
+				CED4A69316BB514D00269A5C /* ARColumn.m */,
+				CED4A69416BB514D00269A5C /* ARColumn_Private.h */,
+				CED4A69516BB514D00269A5C /* ARDatabaseManager.h */,
+				CED4A69616BB514D00269A5C /* ARDatabaseManager.m */,
+				CED4A69716BB514D00269A5C /* AREnum.h */,
+				CED4A69816BB514D00269A5C /* ARError.h */,
+				CED4A69916BB514D00269A5C /* ARError.m */,
+				CED4A69A16BB514D00269A5C /* ARErrorHelper.h */,
+				CED4A69B16BB514D00269A5C /* ARException.h */,
+				CED4A69C16BB514D00269A5C /* ARException.m */,
+				CED4A69D16BB514D00269A5C /* ARIndicesMacroHelper.h */,
+				CED4A69E16BB514D00269A5C /* ARLazyFetcher.h */,
+				CED4A69F16BB514D00269A5C /* ARLazyFetcher.m */,
+				CED4A6A016BB514D00269A5C /* ARLazyFetcher_Private.h */,
+				CED4A6A116BB514D00269A5C /* ARPropertyType.h */,
+				CED4A6A216BB514D00269A5C /* ARRelationBelongsTo.h */,
+				CED4A6A316BB514D00269A5C /* ARRelationBelongsTo.m */,
+				CED4A6A416BB514D00269A5C /* ARRelationHasMany.h */,
+				CED4A6A516BB514D00269A5C /* ARRelationHasMany.m */,
+				CED4A6A616BB514D00269A5C /* ARRelationHasManyThrough.h */,
+				CED4A6A716BB514D00269A5C /* ARRelationHasManyThrough.m */,
+				CED4A6A816BB514D00269A5C /* ARRelationshipsHelper.h */,
+				CED4A6A916BB514D00269A5C /* ARRepresentationProtocol.h */,
+				CED4A6AA16BB514D00269A5C /* ARSchemaManager.h */,
+				CED4A6AB16BB514D00269A5C /* ARSchemaManager.m */,
+				CED4A6AC16BB514D00269A5C /* ARSQLBuilder.h */,
+				CED4A6AD16BB514D00269A5C /* ARSQLBuilder.m */,
+				CED4A6AE16BB514D00269A5C /* ARValidation.h */,
+				CED4A6AF16BB514D00269A5C /* ARValidation.m */,
+				CED4A6B016BB514D00269A5C /* ARValidationsHelper.h */,
+				CED4A6B116BB514D00269A5C /* ARValidator.h */,
+				CED4A6B216BB514D00269A5C /* ARValidator.m */,
+				CED4A6B316BB514D00269A5C /* ARValidatorPresence.h */,
+				CED4A6B416BB514D00269A5C /* ARValidatorPresence.m */,
+				CED4A6B516BB514D00269A5C /* ARValidatorProtocol.h */,
+				CED4A6B616BB514D00269A5C /* ARValidatorUniqueness.h */,
+				CED4A6B716BB514D00269A5C /* ARValidatorUniqueness.m */,
+				CED4A6B816BB514D00269A5C /* class_getSubclasses.h */,
+				CED4A6B916BB514D00269A5C /* deps */,
+				CED4A6BC16BB514D00269A5C /* InfoPlist.strings */,
+				CED4A6BE16BB514D00269A5C /* iActiveRecord-Info.plist */,
+				CED4A6BF16BB514D00269A5C /* iActiveRecord-Prefix.pch */,
+				CED4A6C016BB514D00269A5C /* NSArray+objectsAccessors.h */,
+				CED4A6C116BB514D00269A5C /* NSArray+objectsAccessors.m */,
+				CED4A6C216BB514D00269A5C /* NSArray+toSql.h */,
+				CED4A6C316BB514D00269A5C /* NSArray+toSql.m */,
+				CED4A6C416BB514D00269A5C /* NSData+Base64.h */,
+				CED4A6C516BB514D00269A5C /* NSData+Base64.m */,
+				CED4A6C616BB514D00269A5C /* NSData+isPresented.h */,
+				CED4A6C716BB514D00269A5C /* NSData+isPresented.m */,
+				CED4A6C816BB514D00269A5C /* NSData+sqlRepresentation.h */,
+				CED4A6C916BB514D00269A5C /* NSData+sqlRepresentation.m */,
+				CED4A6CA16BB514D00269A5C /* NSDate+isPresented.h */,
+				CED4A6CB16BB514D00269A5C /* NSDate+isPresented.m */,
+				CED4A6CC16BB514D00269A5C /* NSDate+sqlRepresentation.h */,
+				CED4A6CD16BB514D00269A5C /* NSDate+sqlRepresentation.m */,
+				CED4A6CE16BB514D00269A5C /* NSDecimalNumber+isPresented.h */,
+				CED4A6CF16BB514D00269A5C /* NSDecimalNumber+isPresented.m */,
+				CED4A6D016BB514D00269A5C /* NSDecimalNumber+sqlRepresentation.h */,
+				CED4A6D116BB514D00269A5C /* NSDecimalNumber+sqlRepresentation.m */,
+				CED4A6D216BB514D00269A5C /* NSMutableDictionary+valueToArray.h */,
+				CED4A6D316BB514D00269A5C /* NSMutableDictionary+valueToArray.m */,
+				CED4A6D416BB514D00269A5C /* NSNumber+isPresented.h */,
+				CED4A6D516BB514D00269A5C /* NSNumber+isPresented.m */,
+				CED4A6D616BB514D00269A5C /* NSNumber+sqlRepresentation.h */,
+				CED4A6D716BB514D00269A5C /* NSNumber+sqlRepresentation.m */,
+				CED4A6D816BB514D00269A5C /* NSSet+toSql.h */,
+				CED4A6D916BB514D00269A5C /* NSSet+toSql.m */,
+				CED4A6DA16BB514D00269A5C /* NSString+isPresented.h */,
+				CED4A6DB16BB514D00269A5C /* NSString+isPresented.m */,
+				CED4A6DC16BB514D00269A5C /* NSString+lowercaseFirst.h */,
+				CED4A6DD16BB514D00269A5C /* NSString+lowercaseFirst.m */,
+				CED4A6DE16BB514D00269A5C /* NSString+quotedString.h */,
+				CED4A6DF16BB514D00269A5C /* NSString+quotedString.m */,
+				CED4A6E016BB514D00269A5C /* NSString+sqlRepresentation.h */,
+				CED4A6E116BB514D00269A5C /* NSString+sqlRepresentation.m */,
+				CED4A6E216BB514D00269A5C /* NSString+stringWithEscapedQuote.h */,
+				CED4A6E316BB514D00269A5C /* NSString+stringWithEscapedQuote.m */,
+				CED4A6E416BB514D00269A5C /* NSString+uppercaseFirst.h */,
+				CED4A6E516BB514D00269A5C /* NSString+uppercaseFirst.m */,
+				CED4A6E616BB514D00269A5C /* octocat.png */,
+			);
+			path = iActiveRecord;
+			sourceTree = "<group>";
+		};
+		CED4A6B916BB514D00269A5C /* deps */ = {
+			isa = PBXGroup;
+			children = (
+				CED4A6BA16BB514D00269A5C /* sqlite3_unicode.c */,
+				CED4A6BB16BB514D00269A5C /* sqlite3_unicode.h */,
+			);
+			path = deps;
+			sourceTree = "<group>";
+		};
 		CEEB6D2916BA0E44004C8A8C /* EGOCache */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,6 +807,9 @@
 				CEEB6D5616BA0E44004C8A8C /* CHANGELOG.md in Resources */,
 				CEEB6D5816BA0E44004C8A8C /* README.md in Resources */,
 				CEEB6D5B16BA0E44004C8A8C /* README.txt in Resources */,
+				CED4A6F816BB514D00269A5C /* InfoPlist.strings in Resources */,
+				CED4A6F916BB514D00269A5C /* iActiveRecord-Info.plist in Resources */,
+				CED4A70D16BB514D00269A5C /* octocat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +837,42 @@
 				CED4A68516BB4D3800269A5C /* NewsModel.m in Sources */,
 				CED4A68816BB4DC000269A5C /* NewsModel+Parse.m in Sources */,
 				CED4A68B16BB4F2A00269A5C /* NSString+HTML.m in Sources */,
+				CED4A6E716BB514D00269A5C /* ActiveRecord.m in Sources */,
+				CED4A6E816BB514D00269A5C /* ARBaseRelationship.m in Sources */,
+				CED4A6E916BB514D00269A5C /* ARColumn.m in Sources */,
+				CED4A6EA16BB514D00269A5C /* ARDatabaseManager.m in Sources */,
+				CED4A6EB16BB514D00269A5C /* ARError.m in Sources */,
+				CED4A6EC16BB514D00269A5C /* ARException.m in Sources */,
+				CED4A6ED16BB514D00269A5C /* ARLazyFetcher.m in Sources */,
+				CED4A6EE16BB514D00269A5C /* ARRelationBelongsTo.m in Sources */,
+				CED4A6EF16BB514D00269A5C /* ARRelationHasMany.m in Sources */,
+				CED4A6F016BB514D00269A5C /* ARRelationHasManyThrough.m in Sources */,
+				CED4A6F116BB514D00269A5C /* ARSchemaManager.m in Sources */,
+				CED4A6F216BB514D00269A5C /* ARSQLBuilder.m in Sources */,
+				CED4A6F316BB514D00269A5C /* ARValidation.m in Sources */,
+				CED4A6F416BB514D00269A5C /* ARValidator.m in Sources */,
+				CED4A6F516BB514D00269A5C /* ARValidatorPresence.m in Sources */,
+				CED4A6F616BB514D00269A5C /* ARValidatorUniqueness.m in Sources */,
+				CED4A6F716BB514D00269A5C /* sqlite3_unicode.c in Sources */,
+				CED4A6FA16BB514D00269A5C /* NSArray+objectsAccessors.m in Sources */,
+				CED4A6FB16BB514D00269A5C /* NSArray+toSql.m in Sources */,
+				CED4A6FC16BB514D00269A5C /* NSData+Base64.m in Sources */,
+				CED4A6FD16BB514D00269A5C /* NSData+isPresented.m in Sources */,
+				CED4A6FE16BB514D00269A5C /* NSData+sqlRepresentation.m in Sources */,
+				CED4A6FF16BB514D00269A5C /* NSDate+isPresented.m in Sources */,
+				CED4A70016BB514D00269A5C /* NSDate+sqlRepresentation.m in Sources */,
+				CED4A70116BB514D00269A5C /* NSDecimalNumber+isPresented.m in Sources */,
+				CED4A70216BB514D00269A5C /* NSDecimalNumber+sqlRepresentation.m in Sources */,
+				CED4A70316BB514D00269A5C /* NSMutableDictionary+valueToArray.m in Sources */,
+				CED4A70416BB514D00269A5C /* NSNumber+isPresented.m in Sources */,
+				CED4A70516BB514D00269A5C /* NSNumber+sqlRepresentation.m in Sources */,
+				CED4A70616BB514D00269A5C /* NSSet+toSql.m in Sources */,
+				CED4A70716BB514D00269A5C /* NSString+isPresented.m in Sources */,
+				CED4A70816BB514D00269A5C /* NSString+lowercaseFirst.m in Sources */,
+				CED4A70916BB514D00269A5C /* NSString+quotedString.m in Sources */,
+				CED4A70A16BB514D00269A5C /* NSString+sqlRepresentation.m in Sources */,
+				CED4A70B16BB514D00269A5C /* NSString+stringWithEscapedQuote.m in Sources */,
+				CED4A70C16BB514D00269A5C /* NSString+uppercaseFirst.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +901,14 @@
 				39E6531A16B74F7D00A5A37C /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		CED4A6BC16BB514D00269A5C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED4A6BD16BB514D00269A5C /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
