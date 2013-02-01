@@ -46,6 +46,8 @@
 		39E6531B16B74F7D00A5A37C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E6531916B74F7D00A5A37C /* MainStoryboard_iPad.storyboard */; };
 		CE985BBF16B8B5D900AEB045 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE985BBE16B8B5D900AEB045 /* NewsViewController.m */; };
 		CED4A68516BB4D3800269A5C /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68416BB4D3800269A5C /* NewsModel.m */; };
+		CED4A68816BB4DC000269A5C /* NewsModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68716BB4DC000269A5C /* NewsModel+Parse.m */; };
+		CED4A68B16BB4F2A00269A5C /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68A16BB4F2A00269A5C /* NSString+HTML.m */; };
 		CEEB6D1F16B9F370004C8A8C /* EmissoraModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D1E16B9F370004C8A8C /* EmissoraModel.m */; };
 		CEEB6D2216B9F47F004C8A8C /* EmissoraModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D2116B9F47F004C8A8C /* EmissoraModel+Parse.m */; };
 		CEEB6D2516B9F797004C8A8C /* NovelaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D2416B9F797004C8A8C /* NovelaModel.m */; };
@@ -120,6 +122,10 @@
 		CE985BBE16B8B5D900AEB045 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		CED4A68316BB4D3800269A5C /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
 		CED4A68416BB4D3800269A5C /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		CED4A68616BB4DC000269A5C /* NewsModel+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NewsModel+Parse.h"; sourceTree = "<group>"; };
+		CED4A68716BB4DC000269A5C /* NewsModel+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NewsModel+Parse.m"; sourceTree = "<group>"; };
+		CED4A68916BB4F2A00269A5C /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		CED4A68A16BB4F2A00269A5C /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
 		CEEB6D1D16B9F370004C8A8C /* EmissoraModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmissoraModel.h; sourceTree = "<group>"; };
 		CEEB6D1E16B9F370004C8A8C /* EmissoraModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmissoraModel.m; sourceTree = "<group>"; };
 		CEEB6D2016B9F47F004C8A8C /* EmissoraModel+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EmissoraModel+Parse.h"; sourceTree = "<group>"; };
@@ -243,6 +249,8 @@
 		2342864C16B89C4200F05F6F /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				CED4A68916BB4F2A00269A5C /* NSString+HTML.h */,
+				CED4A68A16BB4F2A00269A5C /* NSString+HTML.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -395,6 +403,8 @@
 				CEEB6D2716B9F7AF004C8A8C /* NovelaModel+Parse.m */,
 				CED4A68316BB4D3800269A5C /* NewsModel.h */,
 				CED4A68416BB4D3800269A5C /* NewsModel.m */,
+				CED4A68616BB4DC000269A5C /* NewsModel+Parse.h */,
+				CED4A68716BB4DC000269A5C /* NewsModel+Parse.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -591,6 +601,8 @@
 				CEEB6D5A16BA0E44004C8A8C /* NSString+MD5.m in Sources */,
 				CEEB6D5C16BA0E44004C8A8C /* YQL.m in Sources */,
 				CED4A68516BB4D3800269A5C /* NewsModel.m in Sources */,
+				CED4A68816BB4DC000269A5C /* NewsModel+Parse.m in Sources */,
+				CED4A68B16BB4F2A00269A5C /* NSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
