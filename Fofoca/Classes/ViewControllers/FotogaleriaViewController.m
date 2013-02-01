@@ -7,11 +7,11 @@
 //
 
 #import "FotogaleriaViewController.h"
+#import "FlickPhotoCell.h"
 
 #define kFlickrAPIKey @"6d61f89b812f7f798b4a2d59b3d2974d"
 
-@interface FotogaleriaViewController () <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
-    @property(nonatomic, weak) IBOutlet UINavigationItem *navItem;
+@interface FotogaleriaViewController () 
     @property(nonatomic, weak) IBOutlet UIBarButtonItem *shareButton;
     @property(nonatomic, weak) IBOutlet UITextField *textField;
 
@@ -37,7 +37,7 @@
     
     UIImage *navBarImage = [[UIImage imageNamed:@"navbar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(27, 27, 27, 27)];
     self.navigationController.navigationBar.backgroundColor = [UIColor colorWithPatternImage:navBarImage];
-    
+
     UIImage *shareButtonImage = [[UIImage imageNamed:@"button.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(8, 8, 8, 8)];
     [self.shareButton setBackgroundImage:shareButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
@@ -47,6 +47,9 @@
     self.searches = [@[] mutableCopy];
     self.searchResults = [@{} mutableCopy];
     self.flickr = [[Flickr alloc] init];
+    
+//    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"FlickrCell"];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -71,7 +74,7 @@
                 self.searchResults[searchTerm] = results; }
             // 3
             dispatch_async(dispatch_get_main_queue(), ^{
-                // Placeholder: reload collectionview data
+                [self.collectionView reloadData];
             });
         } else { // 1
             NSLog(@"Error searching Flickr: %@", error.localizedDescription);
@@ -92,8 +95,10 @@
 }
 // 3
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"FlickrCell " forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor whiteColor];
+    FlickrPhotoCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"FlickrCell" forIndexPath:indexPath];
+    NSString *searchTerm = self.searches[indexPath.section];
+    cell.photo = self.searchResults[searchTerm]
+    [indexPath.row];
     return cell;
 }
 // 4
