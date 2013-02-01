@@ -8,6 +8,7 @@
 
 #import "NovelaModel+Parse.h"
 #import "JSONKit.h"
+#import "EGOCache+PGCache.h"
 
 @implementation NovelaModel (Parse)
 
@@ -15,14 +16,16 @@
     NSMutableArray *novelas = [[NSMutableArray alloc] init];
     
     @try {
-        NSDictionary *dic = [K_YQL_NOVELAS_FUXICO objectFromJSONString];
-        NSDictionary *result = [[dic objectForKey:@"query"] objectForKey:@"results"];
-        
-        if (result != nil && ![result isKindOfClass:NSClassFromString(@"NSNull")]) {
-            for (NSDictionary *item in [result objectForKey:@"canal"]) {
-                NSLog(@"description >>> %@", [item description]);
+        [EGOCache setYQL:K_YQL_NOVELAS_FUXICO withTimeoutInterval:300 onSuccessPerform:^(NSString *content, NSError *error) {
+            NSDictionary *dic = [content objectFromJSONString];
+            NSDictionary *result = [[dic objectForKey:@"query"] objectForKey:@"results"];
+            
+            if (result != nil && ![result isKindOfClass:NSClassFromString(@"NSNull")]) {
+                for (NSDictionary *item in [result objectForKey:@"canal"]) {
+                    NSLog(@"description >>> %@", [item description]);
+                }
             }
-        }
+        }];
     }
     @catch (NSException *exception) {
         NSLog(@"Erro no parseNovela: %@", [exception description]);

@@ -48,6 +48,7 @@
 		39E6530F16B74F7D00A5A37C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E6530E16B74F7D00A5A37C /* AppDelegate.m */; };
 		39E6531816B74F7D00A5A37C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E6531616B74F7D00A5A37C /* MainStoryboard_iPhone.storyboard */; };
 		39E6531B16B74F7D00A5A37C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E6531916B74F7D00A5A37C /* MainStoryboard_iPad.storyboard */; };
+		AC87CB2816BC47B300849AF0 /* EGOCache+PGCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AC87CB2716BC47B300849AF0 /* EGOCache+PGCache.m */; };
 		CE985BBF16B8B5D900AEB045 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE985BBE16B8B5D900AEB045 /* NewsViewController.m */; };
 		CED4A68516BB4D3800269A5C /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68416BB4D3800269A5C /* NewsModel.m */; };
 		CED4A68816BB4DC000269A5C /* NewsModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68716BB4DC000269A5C /* NewsModel+Parse.m */; };
@@ -172,6 +173,8 @@
 		39E6530E16B74F7D00A5A37C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		39E6531716B74F7D00A5A37C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		39E6531A16B74F7D00A5A37C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		AC87CB2616BC47B300849AF0 /* EGOCache+PGCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EGOCache+PGCache.h"; sourceTree = "<group>"; };
+		AC87CB2716BC47B300849AF0 /* EGOCache+PGCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EGOCache+PGCache.m"; sourceTree = "<group>"; };
 		CE985BBB16B8A78000AEB045 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		CE985BBD16B8B5D900AEB045 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		CE985BBE16B8B5D900AEB045 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
@@ -409,6 +412,8 @@
 			children = (
 				CED4A68916BB4F2A00269A5C /* NSString+HTML.h */,
 				CED4A68A16BB4F2A00269A5C /* NSString+HTML.m */,
+				AC87CB2616BC47B300849AF0 /* EGOCache+PGCache.h */,
+				AC87CB2716BC47B300849AF0 /* EGOCache+PGCache.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -943,6 +948,7 @@
 				3915994F16BB59FC007F5B71 /* Flickr.m in Sources */,
 				3915995016BB5A01007F5B71 /* FlickrPhoto.m in Sources */,
 				CED4A72516BB646100269A5C /* TSMiniWebBrowser.m in Sources */,
+				AC87CB2816BC47B300849AF0 /* EGOCache+PGCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
