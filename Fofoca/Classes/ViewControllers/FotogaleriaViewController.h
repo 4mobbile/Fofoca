@@ -10,7 +10,9 @@
 #import "Flickr.h"
 #import "FlickrPhoto.h"
 
-@interface FotogaleriaViewController : UIViewController 
+@interface FotogaleriaViewController : UIViewController <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+
+@property(nonatomic, weak) IBOutlet UICollectionView *collectionView;
 
 @property(nonatomic, strong) NSMutableDictionary *searchResults;
 @property(nonatomic, strong) NSMutableArray *searches;

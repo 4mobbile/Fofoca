@@ -16,6 +16,10 @@
 		2342865B16B89DAE00F05F6F /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2342865716B89DAE00F05F6F /* first@2x.png */; };
 		2342865C16B89DAE00F05F6F /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 2342865816B89DAE00F05F6F /* second.png */; };
 		2342865D16B89DAE00F05F6F /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2342865916B89DAE00F05F6F /* second@2x.png */; };
+		39DE229816BB49EF0044C315 /* FotogaleriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E2DAED16BA014600665601 /* FotogaleriaViewController.m */; };
+		39DE229916BB4A830044C315 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E2DAFE16BA0A1A00665601 /* Flickr.m */; };
+		39DE229A16BB4A860044C315 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E2DB0016BA0A1A00665601 /* FlickrPhoto.m */; };
+		39DE229D16BB4D690044C315 /* FlickPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DE229C16BB4D690044C315 /* FlickPhotoCell.m */; };
 		39E2DAD816BA00C500665601 /* bg_cork.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E2DAC416BA00C400665601 /* bg_cork.png */; };
 		39E2DAD916BA00C500665601 /* bg_cork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E2DAC516BA00C400665601 /* bg_cork@2x.png */; };
 		39E2DADA16BA00C500665601 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E2DAC616BA00C400665601 /* button.png */; };
@@ -76,6 +80,8 @@
 		2342865716B89DAE00F05F6F /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		2342865816B89DAE00F05F6F /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		2342865916B89DAE00F05F6F /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		39DE229B16BB4D690044C315 /* FlickPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickPhotoCell.h; sourceTree = "<group>"; };
+		39DE229C16BB4D690044C315 /* FlickPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickPhotoCell.m; sourceTree = "<group>"; };
 		39E2DAC416BA00C400665601 /* bg_cork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_cork.png; sourceTree = "<group>"; };
 		39E2DAC516BA00C400665601 /* bg_cork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_cork@2x.png"; sourceTree = "<group>"; };
 		39E2DAC616BA00C400665601 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
@@ -320,6 +326,8 @@
 				39E2DAFE16BA0A1A00665601 /* Flickr.m */,
 				39E2DAFF16BA0A1A00665601 /* FlickrPhoto.h */,
 				39E2DB0016BA0A1A00665601 /* FlickrPhoto.m */,
+				39DE229B16BB4D690044C315 /* FlickPhotoCell.h */,
+				39DE229C16BB4D690044C315 /* FlickPhotoCell.m */,
 			);
 			name = "Flickr Interface";
 			path = "Fofoca/Libraries/Flickr Interface";
@@ -585,6 +593,10 @@
 				CEEB6D5916BA0E44004C8A8C /* NSDate+HumanInterval.m in Sources */,
 				CEEB6D5A16BA0E44004C8A8C /* NSString+MD5.m in Sources */,
 				CEEB6D5C16BA0E44004C8A8C /* YQL.m in Sources */,
+				39DE229816BB49EF0044C315 /* FotogaleriaViewController.m in Sources */,
+				39DE229916BB4A830044C315 /* Flickr.m in Sources */,
+				39DE229A16BB4A860044C315 /* FlickrPhoto.m in Sources */,
+				39DE229D16BB4D690044C315 /* FlickPhotoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
