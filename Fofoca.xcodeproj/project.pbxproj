@@ -16,10 +16,6 @@
 		2342865B16B89DAE00F05F6F /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2342865716B89DAE00F05F6F /* first@2x.png */; };
 		2342865C16B89DAE00F05F6F /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 2342865816B89DAE00F05F6F /* second.png */; };
 		2342865D16B89DAE00F05F6F /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2342865916B89DAE00F05F6F /* second@2x.png */; };
-		39DE229816BB49EF0044C315 /* FotogaleriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E2DAED16BA014600665601 /* FotogaleriaViewController.m */; };
-		39DE229916BB4A830044C315 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E2DAFE16BA0A1A00665601 /* Flickr.m */; };
-		39DE229A16BB4A860044C315 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E2DB0016BA0A1A00665601 /* FlickrPhoto.m */; };
-		39DE229D16BB4D690044C315 /* FlickPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DE229C16BB4D690044C315 /* FlickPhotoCell.m */; };
 		39E2DAD816BA00C500665601 /* bg_cork.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E2DAC416BA00C400665601 /* bg_cork.png */; };
 		39E2DAD916BA00C500665601 /* bg_cork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E2DAC516BA00C400665601 /* bg_cork@2x.png */; };
 		39E2DADA16BA00C500665601 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E2DAC616BA00C400665601 /* button.png */; };
@@ -52,45 +48,47 @@
 		CED4A68516BB4D3800269A5C /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68416BB4D3800269A5C /* NewsModel.m */; };
 		CED4A68816BB4DC000269A5C /* NewsModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68716BB4DC000269A5C /* NewsModel+Parse.m */; };
 		CED4A68B16BB4F2A00269A5C /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68A16BB4F2A00269A5C /* NSString+HTML.m */; };
-		CED4A6E716BB514D00269A5C /* ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68E16BB514D00269A5C /* ActiveRecord.m */; };
-		CED4A6E816BB514D00269A5C /* ARBaseRelationship.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69116BB514D00269A5C /* ARBaseRelationship.m */; };
-		CED4A6E916BB514D00269A5C /* ARColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69316BB514D00269A5C /* ARColumn.m */; };
-		CED4A6EA16BB514D00269A5C /* ARDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69616BB514D00269A5C /* ARDatabaseManager.m */; };
-		CED4A6EB16BB514D00269A5C /* ARError.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69916BB514D00269A5C /* ARError.m */; };
-		CED4A6EC16BB514D00269A5C /* ARException.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69C16BB514D00269A5C /* ARException.m */; };
-		CED4A6ED16BB514D00269A5C /* ARLazyFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69F16BB514D00269A5C /* ARLazyFetcher.m */; };
-		CED4A6EE16BB514D00269A5C /* ARRelationBelongsTo.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6A316BB514D00269A5C /* ARRelationBelongsTo.m */; };
-		CED4A6EF16BB514D00269A5C /* ARRelationHasMany.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6A516BB514D00269A5C /* ARRelationHasMany.m */; };
-		CED4A6F016BB514D00269A5C /* ARRelationHasManyThrough.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6A716BB514D00269A5C /* ARRelationHasManyThrough.m */; };
-		CED4A6F116BB514D00269A5C /* ARSchemaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6AB16BB514D00269A5C /* ARSchemaManager.m */; };
-		CED4A6F216BB514D00269A5C /* ARSQLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6AD16BB514D00269A5C /* ARSQLBuilder.m */; };
-		CED4A6F316BB514D00269A5C /* ARValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6AF16BB514D00269A5C /* ARValidation.m */; };
-		CED4A6F416BB514D00269A5C /* ARValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6B216BB514D00269A5C /* ARValidator.m */; };
-		CED4A6F516BB514D00269A5C /* ARValidatorPresence.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6B416BB514D00269A5C /* ARValidatorPresence.m */; };
-		CED4A6F616BB514D00269A5C /* ARValidatorUniqueness.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6B716BB514D00269A5C /* ARValidatorUniqueness.m */; };
-		CED4A6F716BB514D00269A5C /* sqlite3_unicode.c in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6BA16BB514D00269A5C /* sqlite3_unicode.c */; };
+		CED4A6E716BB514D00269A5C /* ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68E16BB514D00269A5C /* ActiveRecord.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6E816BB514D00269A5C /* ARBaseRelationship.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69116BB514D00269A5C /* ARBaseRelationship.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6E916BB514D00269A5C /* ARColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69316BB514D00269A5C /* ARColumn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6EA16BB514D00269A5C /* ARDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69616BB514D00269A5C /* ARDatabaseManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6EB16BB514D00269A5C /* ARError.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69916BB514D00269A5C /* ARError.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6EC16BB514D00269A5C /* ARException.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69C16BB514D00269A5C /* ARException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6ED16BB514D00269A5C /* ARLazyFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A69F16BB514D00269A5C /* ARLazyFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6EE16BB514D00269A5C /* ARRelationBelongsTo.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6A316BB514D00269A5C /* ARRelationBelongsTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6EF16BB514D00269A5C /* ARRelationHasMany.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6A516BB514D00269A5C /* ARRelationHasMany.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6F016BB514D00269A5C /* ARRelationHasManyThrough.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6A716BB514D00269A5C /* ARRelationHasManyThrough.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6F116BB514D00269A5C /* ARSchemaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6AB16BB514D00269A5C /* ARSchemaManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6F216BB514D00269A5C /* ARSQLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6AD16BB514D00269A5C /* ARSQLBuilder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6F316BB514D00269A5C /* ARValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6AF16BB514D00269A5C /* ARValidation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6F416BB514D00269A5C /* ARValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6B216BB514D00269A5C /* ARValidator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6F516BB514D00269A5C /* ARValidatorPresence.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6B416BB514D00269A5C /* ARValidatorPresence.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6F616BB514D00269A5C /* ARValidatorUniqueness.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6B716BB514D00269A5C /* ARValidatorUniqueness.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6F716BB514D00269A5C /* sqlite3_unicode.c in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6BA16BB514D00269A5C /* sqlite3_unicode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		CED4A6F816BB514D00269A5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED4A6BC16BB514D00269A5C /* InfoPlist.strings */; };
 		CED4A6F916BB514D00269A5C /* iActiveRecord-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CED4A6BE16BB514D00269A5C /* iActiveRecord-Info.plist */; };
-		CED4A6FA16BB514D00269A5C /* NSArray+objectsAccessors.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6C116BB514D00269A5C /* NSArray+objectsAccessors.m */; };
-		CED4A6FB16BB514D00269A5C /* NSArray+toSql.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6C316BB514D00269A5C /* NSArray+toSql.m */; };
-		CED4A6FC16BB514D00269A5C /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6C516BB514D00269A5C /* NSData+Base64.m */; };
-		CED4A6FD16BB514D00269A5C /* NSData+isPresented.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6C716BB514D00269A5C /* NSData+isPresented.m */; };
-		CED4A6FE16BB514D00269A5C /* NSData+sqlRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6C916BB514D00269A5C /* NSData+sqlRepresentation.m */; };
-		CED4A6FF16BB514D00269A5C /* NSDate+isPresented.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6CB16BB514D00269A5C /* NSDate+isPresented.m */; };
-		CED4A70016BB514D00269A5C /* NSDate+sqlRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6CD16BB514D00269A5C /* NSDate+sqlRepresentation.m */; };
-		CED4A70116BB514D00269A5C /* NSDecimalNumber+isPresented.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6CF16BB514D00269A5C /* NSDecimalNumber+isPresented.m */; };
-		CED4A70216BB514D00269A5C /* NSDecimalNumber+sqlRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6D116BB514D00269A5C /* NSDecimalNumber+sqlRepresentation.m */; };
-		CED4A70316BB514D00269A5C /* NSMutableDictionary+valueToArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6D316BB514D00269A5C /* NSMutableDictionary+valueToArray.m */; };
-		CED4A70416BB514D00269A5C /* NSNumber+isPresented.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6D516BB514D00269A5C /* NSNumber+isPresented.m */; };
-		CED4A70516BB514D00269A5C /* NSNumber+sqlRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6D716BB514D00269A5C /* NSNumber+sqlRepresentation.m */; };
-		CED4A70616BB514D00269A5C /* NSSet+toSql.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6D916BB514D00269A5C /* NSSet+toSql.m */; };
-		CED4A70716BB514D00269A5C /* NSString+isPresented.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6DB16BB514D00269A5C /* NSString+isPresented.m */; };
-		CED4A70816BB514D00269A5C /* NSString+lowercaseFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6DD16BB514D00269A5C /* NSString+lowercaseFirst.m */; };
-		CED4A70916BB514D00269A5C /* NSString+quotedString.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6DF16BB514D00269A5C /* NSString+quotedString.m */; };
-		CED4A70A16BB514D00269A5C /* NSString+sqlRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6E116BB514D00269A5C /* NSString+sqlRepresentation.m */; };
-		CED4A70B16BB514D00269A5C /* NSString+stringWithEscapedQuote.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6E316BB514D00269A5C /* NSString+stringWithEscapedQuote.m */; };
-		CED4A70C16BB514D00269A5C /* NSString+uppercaseFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6E516BB514D00269A5C /* NSString+uppercaseFirst.m */; };
+		CED4A6FA16BB514D00269A5C /* NSArray+objectsAccessors.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6C116BB514D00269A5C /* NSArray+objectsAccessors.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6FB16BB514D00269A5C /* NSArray+toSql.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6C316BB514D00269A5C /* NSArray+toSql.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6FC16BB514D00269A5C /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6C516BB514D00269A5C /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6FD16BB514D00269A5C /* NSData+isPresented.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6C716BB514D00269A5C /* NSData+isPresented.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6FE16BB514D00269A5C /* NSData+sqlRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6C916BB514D00269A5C /* NSData+sqlRepresentation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A6FF16BB514D00269A5C /* NSDate+isPresented.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6CB16BB514D00269A5C /* NSDate+isPresented.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A70016BB514D00269A5C /* NSDate+sqlRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6CD16BB514D00269A5C /* NSDate+sqlRepresentation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A70116BB514D00269A5C /* NSDecimalNumber+isPresented.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6CF16BB514D00269A5C /* NSDecimalNumber+isPresented.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A70216BB514D00269A5C /* NSDecimalNumber+sqlRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6D116BB514D00269A5C /* NSDecimalNumber+sqlRepresentation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A70316BB514D00269A5C /* NSMutableDictionary+valueToArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6D316BB514D00269A5C /* NSMutableDictionary+valueToArray.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A70416BB514D00269A5C /* NSNumber+isPresented.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6D516BB514D00269A5C /* NSNumber+isPresented.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A70516BB514D00269A5C /* NSNumber+sqlRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6D716BB514D00269A5C /* NSNumber+sqlRepresentation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A70616BB514D00269A5C /* NSSet+toSql.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6D916BB514D00269A5C /* NSSet+toSql.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A70716BB514D00269A5C /* NSString+isPresented.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6DB16BB514D00269A5C /* NSString+isPresented.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A70816BB514D00269A5C /* NSString+lowercaseFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6DD16BB514D00269A5C /* NSString+lowercaseFirst.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A70916BB514D00269A5C /* NSString+quotedString.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6DF16BB514D00269A5C /* NSString+quotedString.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A70A16BB514D00269A5C /* NSString+sqlRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6E116BB514D00269A5C /* NSString+sqlRepresentation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A70B16BB514D00269A5C /* NSString+stringWithEscapedQuote.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6E316BB514D00269A5C /* NSString+stringWithEscapedQuote.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		CED4A70C16BB514D00269A5C /* NSString+uppercaseFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A6E516BB514D00269A5C /* NSString+uppercaseFirst.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		CED4A70D16BB514D00269A5C /* octocat.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4A6E616BB514D00269A5C /* octocat.png */; };
+		CED4A71016BB554D00269A5C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED4A70E16BB553300269A5C /* QuartzCore.framework */; };
+		CED4A71316BB57DD00269A5C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CED4A71116BB57C800269A5C /* libsqlite3.0.dylib */; };
 		CEEB6D1F16B9F370004C8A8C /* EmissoraModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D1E16B9F370004C8A8C /* EmissoraModel.m */; };
 		CEEB6D2216B9F47F004C8A8C /* EmissoraModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D2116B9F47F004C8A8C /* EmissoraModel+Parse.m */; };
 		CEEB6D2516B9F797004C8A8C /* NovelaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D2416B9F797004C8A8C /* NovelaModel.m */; };
@@ -259,6 +257,8 @@
 		CED4A6E416BB514D00269A5C /* NSString+uppercaseFirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+uppercaseFirst.h"; sourceTree = "<group>"; };
 		CED4A6E516BB514D00269A5C /* NSString+uppercaseFirst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+uppercaseFirst.m"; sourceTree = "<group>"; };
 		CED4A6E616BB514D00269A5C /* octocat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octocat.png; sourceTree = "<group>"; };
+		CED4A70E16BB553300269A5C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CED4A71116BB57C800269A5C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		CEEB6D1D16B9F370004C8A8C /* EmissoraModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmissoraModel.h; sourceTree = "<group>"; };
 		CEEB6D1E16B9F370004C8A8C /* EmissoraModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmissoraModel.m; sourceTree = "<group>"; };
 		CEEB6D2016B9F47F004C8A8C /* EmissoraModel+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EmissoraModel+Parse.h"; sourceTree = "<group>"; };
@@ -306,6 +306,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED4A71316BB57DD00269A5C /* libsqlite3.0.dylib in Frameworks */,
+				CED4A71016BB554D00269A5C /* QuartzCore.framework in Frameworks */,
 				39E652FF16B74F7D00A5A37C /* UIKit.framework in Frameworks */,
 				39E6530116B74F7D00A5A37C /* Foundation.framework in Frameworks */,
 				39E6530316B74F7D00A5A37C /* CoreGraphics.framework in Frameworks */,
@@ -493,6 +495,8 @@
 		39E652FD16B74F7D00A5A37C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CED4A71116BB57C800269A5C /* libsqlite3.0.dylib */,
+				CED4A70E16BB553300269A5C /* QuartzCore.framework */,
 				39E652FE16B74F7D00A5A37C /* UIKit.framework */,
 				39E6530016B74F7D00A5A37C /* Foundation.framework */,
 				39E6530216B74F7D00A5A37C /* CoreGraphics.framework */,
