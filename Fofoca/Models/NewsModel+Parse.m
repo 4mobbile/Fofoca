@@ -30,7 +30,7 @@
     NSMutableArray *items = [[NSMutableArray alloc] init];
     
     for (NSDictionary *item in array) {
-        GRItem *news = [GRItem parseWithDictionary:item];
+        NewsModel *news = [NewsModel parseWithDictionary:item];
         
         if (news.title != nil && [news.title length] > 0) {
             [items addObject:news];

@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 4Mobile. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ActiveRecord.h"
 
-@interface NewsModel : NSObject
+@interface NewsModel : ActiveRecord
 
 @property (nonatomic, retain) NSString * identifier;
 @property (nonatomic, retain) NSString * title;
