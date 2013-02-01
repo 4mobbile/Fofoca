@@ -17,13 +17,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    [self loadingListWithNews];
+    
+    [self setUpPullToRefreshInTableViewOfList];
+
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark - Pull to Refresh
+
+- (void)setUpPullToRefreshInTableViewOfList {
+    if (![self refreshControl]) {
+        self.refreshControl = [[UIRefreshControl alloc] init];
+        [self.refreshControl addTarget:self action:@selector(loadingListWithNews) forControlEvents:UIControlEventValueChanged];
+        
+        [[self tableView] addSubview:self.refreshControl];
+    }
+}
+
+- (void)hideRefreshControl {
+    if ([self refreshControl]) {
+        [self.refreshControl endRefreshing];
+    }
 }
 
 
@@ -34,7 +55,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return [self.news count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -47,11 +68,23 @@
     
     cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
+    NewsModel *item = [self.news objectAtIndex:[indexPath row]];
+    
+    UILabel *time = (UILabel *)[cell viewWithTag:102];
+    UILabel *title = (UILabel *)[cell viewWithTag:103];
+    UILabel *author = (UILabel *)[cell viewWithTag:101];
+    
+    [time setText:[item.publishedAt humanIntervalAgoSinceNow]];
+    [title setText:item.title];
+    [author setText:item.origin];
+    
+    [title sizeToFit];
+    
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 110;
+    return 68;
 }
 
 
@@ -59,7 +92,23 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:[tableView indexPathForSelectedRow] animated:NO];
-    [self performSegueWithIdentifier:@"segueToOpenNews" sender:indexPath];
+//    TSMiniWebBrowser *webBrowser = [TSMiniWebBrowser browserWithUrl:[NSURL URLWithString:[[self.news objectAtIndex:[indexPath row]] link]] delegate:self];
+//    
+//    [self.navigationController pushViewController:webBrowser animated:YES];
+}
+
+
+#pragma mark - Loading
+
+- (void)loadingListWithNews {
+    NSDictionary *dic = [K_URL_NEWS objectFromJSONString];
+    
+    self.news = [NewsModel parseWithArray:[dic objectForKey:@"items"]];
+    
+    NSLog(@"Quantidade encontrado pelo parse: %i", [self.news count]);
+    
+    [[self tableView] reloadData];
+    [self hideRefreshControl];
 }
 
 @end
