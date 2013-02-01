@@ -16,6 +16,10 @@
 		2342865B16B89DAE00F05F6F /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2342865716B89DAE00F05F6F /* first@2x.png */; };
 		2342865C16B89DAE00F05F6F /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 2342865816B89DAE00F05F6F /* second.png */; };
 		2342865D16B89DAE00F05F6F /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2342865916B89DAE00F05F6F /* second@2x.png */; };
+		3915994D16BB59CE007F5B71 /* FlickPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DE229C16BB4D690044C315 /* FlickPhotoCell.m */; };
+		3915994E16BB59F1007F5B71 /* FotogaleriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E2DAED16BA014600665601 /* FotogaleriaViewController.m */; };
+		3915994F16BB59FC007F5B71 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E2DAFE16BA0A1A00665601 /* Flickr.m */; };
+		3915995016BB5A01007F5B71 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E2DB0016BA0A1A00665601 /* FlickrPhoto.m */; };
 		39E2DAD816BA00C500665601 /* bg_cork.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E2DAC416BA00C400665601 /* bg_cork.png */; };
 		39E2DAD916BA00C500665601 /* bg_cork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E2DAC516BA00C400665601 /* bg_cork@2x.png */; };
 		39E2DADA16BA00C500665601 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E2DAC616BA00C400665601 /* button.png */; };
@@ -885,6 +889,10 @@
 				CED4A70A16BB514D00269A5C /* NSString+sqlRepresentation.m in Sources */,
 				CED4A70B16BB514D00269A5C /* NSString+stringWithEscapedQuote.m in Sources */,
 				CED4A70C16BB514D00269A5C /* NSString+uppercaseFirst.m in Sources */,
+				3915994D16BB59CE007F5B71 /* FlickPhotoCell.m in Sources */,
+				3915994E16BB59F1007F5B71 /* FotogaleriaViewController.m in Sources */,
+				3915994F16BB59FC007F5B71 /* Flickr.m in Sources */,
+				3915995016BB5A01007F5B71 /* FlickrPhoto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
