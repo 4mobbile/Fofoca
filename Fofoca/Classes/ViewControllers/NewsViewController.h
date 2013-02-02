@@ -12,6 +12,7 @@
 #import "Global.h"
 #import "TSMiniWebBrowser.h"
 #import "NSDate+HumanInterval.h"
+#import "EGOCache+PGCache.h"
 
 @interface NewsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 

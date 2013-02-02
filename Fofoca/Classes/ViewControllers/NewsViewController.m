@@ -84,7 +84,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 68;
+    return 70;
 }
 
 
@@ -101,11 +101,14 @@
 #pragma mark - Loading
 
 - (void)loadingListWithNews {
-    NSDictionary *dic = [K_URL_NEWS objectFromJSONString];
-    
-    self.news = [NewsModel parseWithArray:[dic objectForKey:@"items"]];
-    
-    NSLog(@"Quantidade encontrado pelo parse: %i", [self.news count]);
+    [EGOCache setUrl:K_URL_NEWS withTimeoutInterval:K_CACHE_TIME_GOOGLE_READER onSuccessPerform:^(NSString *content, NSError *error) {
+        if (error == nil) {
+            NSDictionary *dic = [content objectFromJSONString];
+            self.news = [NewsModel parseWithArray:[dic objectForKey:@"items"]];
+            
+            NSLog(@"Quantidade encontrado pelo parse: %i", [self.news count]);
+        }
+    }];
     
     [[self tableView] reloadData];
     [self hideRefreshControl];
