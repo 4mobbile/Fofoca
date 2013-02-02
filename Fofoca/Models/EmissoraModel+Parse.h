@@ -11,6 +11,7 @@
 #import "JSONKit.h"
 #import "EGOCache+PGCache.h"
 #import "YQL.h"
+#import "NovelaModel+Parse.h"
 
 @interface EmissoraModel (Parse)
 

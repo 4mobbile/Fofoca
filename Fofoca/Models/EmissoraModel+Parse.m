@@ -27,9 +27,22 @@
                     
                     [novelas removeAllObjects];
                     
-                    for (NSDictionary *newItem in [YQL forceArrayWithId:[[item objectForKey:@"ul"] objectForKey:@"li"]]) {
+                    for (NSDictionary *itemLi in [YQL forceArrayWithId:[[item objectForKey:@"ul"] objectForKey:@"li"]]) {
                         
-                        [novelas addObject:[[[[newItem objectForKey:@"div"] objectForKey:@"h2"] objectForKey:@"a"] objectForKey:@"content"]];
+                        NovelaModel *novela = [[NovelaModel alloc] init];
+                        
+                        novela.name = [[[[itemLi objectForKey:@"div"] objectForKey:@"h2"] objectForKey:@"a"] objectForKey:@"content"];
+                        
+                        novela.firstChapterImage = [[[itemLi objectForKey:@"a"] objectForKey:@"img"] objectForKey:@"src"];                        
+                        
+                        for (NSDictionary *itemA in [YQL forceArrayWithId:[[[itemLi objectForKey:@"div"] objectForKey:@"h3"] objectForKey:@"a"]]) {
+                            
+                            if (![[itemA objectForKey:@"content"]isEqualToString:K_TEXT_LEIA_MAIS]) {
+                                novela.firstChapter = [itemA objectForKey:@"content"];
+                            }
+                        }
+                        
+                        [novelas addObject:novela];
                         
                     }
                     
