@@ -8,6 +8,8 @@
 
 #import "HomeViewController.h"
 #import "JSONKit.h"
+#import "EGOCache+PGCache.h"
+#import "EmissoraModel+Parse.h"
 
 @interface HomeViewController ()
 
@@ -18,7 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,7 +7,13 @@
 //
 
 #import "EmissoraModel.h"
+#import "Global.h"
+#import "JSONKit.h"
+#import "EGOCache+PGCache.h"
+#import "YQL.h"
 
 @interface EmissoraModel (Parse)
+
++ (NSArray *)parseEmissora;
 
 @end

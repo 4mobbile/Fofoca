@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EmissoraModel+Parse.h"
+#import "NovelaModel+Parse.h"
 
 @interface NovelasViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) NSArray *emissoras;
+@property (nonatomic, strong) NSArray *novelas;
 
 @end

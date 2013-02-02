@@ -21,8 +21,11 @@
             NSDictionary *result = [[dic objectForKey:@"query"] objectForKey:@"results"];
             
             if (result != nil && ![result isKindOfClass:NSClassFromString(@"NSNull")]) {
-                for (NSDictionary *item in [result objectForKey:@"canal"]) {
+                for (NSDictionary *item in [YQL forceArrayWithId:[result objectForKey:@"div"]]) {
                     NSLog(@"description >>> %@", [item description]);
+                    
+                }
+                for (NSDictionary *item in [result objectForKey:@"canal"]) {
                 }
             }
         }];

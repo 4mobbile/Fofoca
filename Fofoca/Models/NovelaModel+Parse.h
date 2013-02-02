@@ -8,6 +8,9 @@
 
 #import "NovelaModel.h"
 #import "Global.h"
+#import "JSONKit.h"
+#import "EGOCache+PGCache.h"
+#import "YQL.h"
 
 @interface NovelaModel (Parse)
 

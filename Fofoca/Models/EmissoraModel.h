@@ -10,7 +10,7 @@
 
 @interface EmissoraModel : NSObject
 
-@property (nonatomic, copy) NSString *emissoraName;
+@property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSArray *novelas;
 
 @end
