@@ -14,6 +14,6 @@
 
 @interface NovelaModel (Parse)
 
-+ (NSArray *)parseNovela;
++ (NSArray *)parseChaptersWithNovela:(NSString *)novela;
 
 @end

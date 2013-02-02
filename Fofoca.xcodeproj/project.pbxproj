@@ -102,6 +102,7 @@
 		CED4A72416BB646100269A5C /* reload_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4A71B16BB646100269A5C /* reload_icon@2x.png */; };
 		CED4A72516BB646100269A5C /* TSMiniWebBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A71D16BB646100269A5C /* TSMiniWebBrowser.m */; };
 		CED4A72616BB646100269A5C /* TSMiniWebBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4A71E16BB646100269A5C /* TSMiniWebBrowser.xib */; };
+		CEEB339116BCC1DF00D2B9D3 /* NSString+PGString.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB339016BCC1DF00D2B9D3 /* NSString+PGString.m */; };
 		CEEB6D1F16B9F370004C8A8C /* EmissoraModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D1E16B9F370004C8A8C /* EmissoraModel.m */; };
 		CEEB6D2216B9F47F004C8A8C /* EmissoraModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D2116B9F47F004C8A8C /* EmissoraModel+Parse.m */; };
 		CEEB6D2516B9F797004C8A8C /* NovelaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D2416B9F797004C8A8C /* NovelaModel.m */; };
@@ -283,6 +284,8 @@
 		CED4A71C16BB646100269A5C /* TSMiniWebBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMiniWebBrowser.h; sourceTree = "<group>"; };
 		CED4A71D16BB646100269A5C /* TSMiniWebBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMiniWebBrowser.m; sourceTree = "<group>"; };
 		CED4A71E16BB646100269A5C /* TSMiniWebBrowser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSMiniWebBrowser.xib; sourceTree = "<group>"; };
+		CEEB338F16BCC1DF00D2B9D3 /* NSString+PGString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PGString.h"; sourceTree = "<group>"; };
+		CEEB339016BCC1DF00D2B9D3 /* NSString+PGString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PGString.m"; sourceTree = "<group>"; };
 		CEEB6D1D16B9F370004C8A8C /* EmissoraModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmissoraModel.h; sourceTree = "<group>"; };
 		CEEB6D1E16B9F370004C8A8C /* EmissoraModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmissoraModel.m; sourceTree = "<group>"; };
 		CEEB6D2016B9F47F004C8A8C /* EmissoraModel+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EmissoraModel+Parse.h"; sourceTree = "<group>"; };
@@ -412,6 +415,8 @@
 			children = (
 				CED4A68916BB4F2A00269A5C /* NSString+HTML.h */,
 				CED4A68A16BB4F2A00269A5C /* NSString+HTML.m */,
+				CEEB338F16BCC1DF00D2B9D3 /* NSString+PGString.h */,
+				CEEB339016BCC1DF00D2B9D3 /* NSString+PGString.m */,
 				AC87CB2616BC47B300849AF0 /* EGOCache+PGCache.h */,
 				AC87CB2716BC47B300849AF0 /* EGOCache+PGCache.m */,
 			);
@@ -949,6 +954,7 @@
 				3915995016BB5A01007F5B71 /* FlickrPhoto.m in Sources */,
 				CED4A72516BB646100269A5C /* TSMiniWebBrowser.m in Sources */,
 				AC87CB2816BC47B300849AF0 /* EGOCache+PGCache.m in Sources */,
+				CEEB339116BCC1DF00D2B9D3 /* NSString+PGString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

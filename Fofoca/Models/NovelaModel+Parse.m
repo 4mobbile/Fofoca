@@ -12,11 +12,12 @@
 
 @implementation NovelaModel (Parse)
 
-+ (NSArray *)parseNovela {
-    NSMutableArray *novelas = [[NSMutableArray alloc] init];
-    
++ (NSArray *)parseChaptersWithNovela:(NSString *)novela {
+    NSMutableArray *chapters = [[NSMutableArray alloc] init];
+    NSString *url = K_YQL_NOVELA_FUXICO;
+    url = [url stringByReplacingOccurrencesOfString:@"%@" withString:novela];
     @try {
-        [EGOCache setYQL:K_YQL_NOVELAS_FUXICO withTimeoutInterval:300 onSuccessPerform:^(NSString *content, NSError *error) {
+        [EGOCache setYQL:K_YQL_NOVELA_FUXICO withTimeoutInterval:300 onSuccessPerform:^(NSString *content, NSError *error) {
             NSDictionary *dic = [content objectFromJSONString];
             NSDictionary *result = [[dic objectForKey:@"query"] objectForKey:@"results"];
             
@@ -34,7 +35,7 @@
         NSLog(@"Erro no parseNovela: %@", [exception description]);
     }
     @finally {
-        return novelas;
+        return chapters;
     }
 }
 
