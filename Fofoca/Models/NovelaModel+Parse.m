@@ -7,8 +7,7 @@
 //
 
 #import "NovelaModel+Parse.h"
-#import "JSONKit.h"
-#import "EGOCache+PGCache.h"
+
 
 @implementation NovelaModel (Parse)
 
@@ -45,9 +44,9 @@
 }
 
 + (NSString *)ajustNameNovelaWithString:(NSString *)name {
-    [name lowercaseString];
+    name = [name lowercaseString];
     name = [name stringByReplacingOccurrencesOfString:@" " withString:@"-"];
-    [name removePonctuationFromString];
+    name = [name removePonctuationFromString];
     return name;
 }
 

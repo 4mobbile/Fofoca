@@ -29,7 +29,7 @@
     a=[a stringByReplacingOccurrencesOfString:@" " withString:@""];
     a=[a stringByReplacingOccurrencesOfString:@"'" withString:@""];
     a=[a stringByReplacingOccurrencesOfString:@"`" withString:@""];
-    a=[a stringByReplacingOccurrencesOfString:@"-" withString:@""];
+//    a=[a stringByReplacingOccurrencesOfString:@"-" withString:@""];
     a=[a stringByReplacingOccurrencesOfString:@"_" withString:@""];
     a=[a stringByReplacingOccurrencesOfString:@"?" withString:@""];    
     a=[a stringByReplacingOccurrencesOfString:@"ç" withString:@"c"];
