@@ -11,9 +11,11 @@
 #import "JSONKit.h"
 #import "EGOCache+PGCache.h"
 #import "YQL.h"
+#import "NSString+PGString.h"
 
 @interface NovelaModel (Parse)
 
 + (NSArray *)parseChaptersWithNovela:(NSString *)novela;
++ (NSString *)ajustNameNovelaWithString:(NSString *)name;
 
 @end
