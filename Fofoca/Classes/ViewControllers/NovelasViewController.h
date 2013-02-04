@@ -11,6 +11,7 @@
 #import "EmissoraModel+Parse.h"
 #import "NovelaModel+Parse.h"
 #import "NSString+PGString.h"
+#import "NovelaViewController.h"
 
 @interface NovelasViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 

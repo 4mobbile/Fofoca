@@ -303,16 +303,16 @@
             </objects>
             <point key="canvasLocation" x="1759" y="-1116"/>
         </scene>
-        <!--View Controller - Resumo da Novela-->
+        <!--Novela View Controller - Novela-->
         <scene sceneID="ZMt-Aw-UbQ">
             <objects>
-                <viewController id="7KN-Jl-5im" sceneMemberID="viewController">
+                <viewController id="7KN-Jl-5im" customClass="NovelaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xSq-lg-JDB">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Resumo da Novela" id="Kmw-qq-y4f"/>
+                    <navigationItem key="navigationItem" title="Novela" id="Kmw-qq-y4f"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEH-yn-JzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -436,6 +436,9 @@
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>
+        <class className="NovelaViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NovelaViewController.h"/>
+        </class>
         <class className="NovelasViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NovelasViewController.h"/>
         </class>
@@ -447,9 +450,6 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

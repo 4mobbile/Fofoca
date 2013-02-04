@@ -32,10 +32,17 @@
 {
     NSIndexPath *indexPath = sender;
     
-    if ([[segue identifier] isEqualToString:@"segueSelectedMovie"]) {
-//        MovieViewController *movieView = [segue destinationViewController];
-//        [movieView setMovie:[self.movies objectAtIndex:[indexPath row]]];
-//        [movieView setCinePopMovie:[CPMovie likeCinePopMovieWithGMMovie:movieView.movie cinePopMovies:self.cinePopMovies]];
+    EmissoraModel *emissora = [[EmissoraModel alloc] init];
+    
+    emissora = [self.emissoras objectAtIndex:indexPath.section];
+    
+    NovelaModel *novela = [[NovelaModel alloc] init];
+    
+    novela = [emissora.novelas objectAtIndex:indexPath.row];
+    
+    if ([[segue identifier] isEqualToString:@"segueNovelasToResume"]) {
+        NovelaViewController *novelaVC = [segue destinationViewController];
+        novelaVC.novelaName = novela.name;
     }
 }
 
@@ -100,15 +107,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:[tableView indexPathForSelectedRow] animated:NO];
-    EmissoraModel *emissora = [[EmissoraModel alloc] init];
-    
-    emissora = [self.emissoras objectAtIndex:indexPath.section];
-    
-    NovelaModel *novela = [[NovelaModel alloc] init];
-    
-    novela = [emissora.novelas objectAtIndex:indexPath.row];
-
-    [self performSegueWithIdentifier:@"segueNovelasToResume" sender:novela.name];
+    [self performSegueWithIdentifier:@"segueNovelasToResume" sender:indexPath];
 }
 
 @end

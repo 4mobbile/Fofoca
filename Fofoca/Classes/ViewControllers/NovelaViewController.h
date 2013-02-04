@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EmissoraModel+Parse.h"
+#import "NovelaModel+Parse.h"
 
 @interface NovelaViewController : UIViewController
+
+@property(nonatomic, strong) NSString *novelaName;
 
 @end
