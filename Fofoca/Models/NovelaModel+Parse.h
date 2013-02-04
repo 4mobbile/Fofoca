@@ -12,6 +12,7 @@
 #import "EGOCache+PGCache.h"
 #import "YQL.h"
 #import "NSString+PGString.h"
+#import "ChapterModel+Parse.h"
 
 @interface NovelaModel (Parse)
 

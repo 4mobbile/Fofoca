@@ -10,4 +10,9 @@
 
 @interface ChapterModel : NSObject
 
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *image;
+@property (nonatomic, copy) NSString *exhibitionAt;
+@property (nonatomic, copy) NSString *url;
+
 @end

@@ -15,9 +15,6 @@
     NSMutableArray *chapters = [[NSMutableArray alloc] init];
     NSString *url = K_YQL_NOVELA_FUXICO;
     
-    NovelaModel *novela = [[NovelaModel alloc ] init];
-    novela.name = nameNovela;
-    
     url = [url stringByReplacingOccurrencesOfString:@"%@" withString:[self ajustNameNovelaWithString:nameNovela]];
     
     @try {
@@ -26,12 +23,9 @@
             NSDictionary *result = [[dic objectForKey:@"query"] objectForKey:@"results"];
             
             if (result != nil && ![result isKindOfClass:NSClassFromString(@"NSNull")]) {
-                for (NSDictionary *item in [YQL forceArrayWithId:[[result objectForKey:@"div"] objectForKey:@"ul"]]) {
-                    NovelaModel *novela = [[NovelaModel alloc] init];
-                    
-                    
-                    
-                }
+                NovelaModel *novela = [[NovelaModel alloc ] init];
+                novela.name = nameNovela;
+                novela.chapters = [ChapterModel parseChaptersWithDictionary:result];
             }
         }];
     }

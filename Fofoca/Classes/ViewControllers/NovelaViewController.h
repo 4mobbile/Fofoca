@@ -13,5 +13,6 @@
 @interface NovelaViewController : UIViewController
 
 @property(nonatomic, strong) NSString *novelaName;
+@property(nonatomic, strong) NSArray *chapters;
 
 @end

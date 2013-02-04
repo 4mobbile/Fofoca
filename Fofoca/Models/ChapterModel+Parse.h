@@ -7,7 +7,16 @@
 //
 
 #import "ChapterModel.h"
+#import "Global.h"
+#import "JSONKit.h"
+#import "EGOCache+PGCache.h"
+#import "YQL.h"
+#import "NSString+PGString.h"
+
 
 @interface ChapterModel (Parse)
+
++ (NSArray *)parseChaptersWithDictionary:(NSDictionary *)dic;
++ (ChapterModel *)parseChapter:(NSDictionary *)dic;
 
 @end
