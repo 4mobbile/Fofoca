@@ -23,27 +23,27 @@
 {
     [super viewDidLoad];
 
-    NSString *url = K_YQL_NOVELA_FUXICO;
-    
-    NSString *nameNovela = [[NSString alloc] init];
-    nameNovela = @"Salve Jorge";
-    
-    url = [url stringByReplacingOccurrencesOfString:@"%@" withString:[NovelaModel ajustNameNovelaWithString:nameNovela]];
-    
-    [EGOCache setYQL:url withTimeoutInterval:K_CACHE_TIME onSuccessPerform:^(NSString *content, NSError *error) {
-        
-        NSDictionary *dic = [content objectFromJSONString];
-        NSDictionary *result = [[dic objectForKey:@"query"] objectForKey:@"results"];
-        
-        NSLog(@"dic >>> %@", [result description]);
-        
-        if (result != nil && ![result isKindOfClass:NSClassFromString(@"NSNull")]) {
-            for (NSDictionary *item in [YQL forceArrayWithId:[[result objectForKey:@"div"] objectForKey:@"ul"]]) {
-                NSLog(@"description >>> %@", [item description]);
-                
-            }
-        }
-    }];
+//    NSString *url = K_YQL_NOVELA_FUXICO;
+//    
+//    NSString *nameNovela = [[NSString alloc] init];
+//    nameNovela = @"Salve Jorge";
+//    
+//    url = [url stringByReplacingOccurrencesOfString:@"%@" withString:[NovelaModel ajustNameNovelaWithString:nameNovela]];
+//    
+//    [EGOCache setYQL:url withTimeoutInterval:K_CACHE_TIME onSuccessPerform:^(NSString *content, NSError *error) {
+//        
+//        NSDictionary *dic = [content objectFromJSONString];
+//        NSDictionary *result = [[dic objectForKey:@"query"] objectForKey:@"results"];
+//        
+//        NSLog(@"dic >>> %@", [result description]);
+//        
+//        if (result != nil && ![result isKindOfClass:NSClassFromString(@"NSNull")]) {
+//            for (NSDictionary *item in [YQL forceArrayWithId:[[result objectForKey:@"div"] objectForKey:@"ul"]]) {
+//                NSLog(@"description >>> %@", [item description]);
+//                
+//            }
+//        }
+//    }];
 
         
 }

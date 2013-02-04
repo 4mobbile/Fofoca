@@ -33,7 +33,7 @@
                         
                         novela.name = [[[[itemLi objectForKey:@"div"] objectForKey:@"h2"] objectForKey:@"a"] objectForKey:@"content"];
                         
-                        novela.firstChapterImage = [[[itemLi objectForKey:@"a"] objectForKey:@"img"] objectForKey:@"src"];                        
+                        novela.firstChapterImage = [NSString stringWithFormat:@"https://ofuxico.terra.com.br%@", [[[itemLi objectForKey:@"a"] objectForKey:@"img"] objectForKey:@"src"]];                        
                         
                         for (NSDictionary *itemA in [YQL forceArrayWithId:[[[itemLi objectForKey:@"div"] objectForKey:@"h3"] objectForKey:@"a"]]) {
                             

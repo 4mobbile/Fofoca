@@ -50,6 +50,7 @@
 		39E6531B16B74F7D00A5A37C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E6531916B74F7D00A5A37C /* MainStoryboard_iPad.storyboard */; };
 		AC87CB2816BC47B300849AF0 /* EGOCache+PGCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AC87CB2716BC47B300849AF0 /* EGOCache+PGCache.m */; };
 		CE985BBF16B8B5D900AEB045 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE985BBE16B8B5D900AEB045 /* NewsViewController.m */; };
+		CED2C80016BD2B1A00530F89 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED2C7FF16BD2B1A00530F89 /* SDWebImage.framework */; };
 		CED4A68516BB4D3800269A5C /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68416BB4D3800269A5C /* NewsModel.m */; };
 		CED4A68816BB4DC000269A5C /* NewsModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68716BB4DC000269A5C /* NewsModel+Parse.m */; };
 		CED4A68B16BB4F2A00269A5C /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A68A16BB4F2A00269A5C /* NSString+HTML.m */; };
@@ -179,6 +180,7 @@
 		CE985BBB16B8A78000AEB045 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		CE985BBD16B8B5D900AEB045 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		CE985BBE16B8B5D900AEB045 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		CED2C7FF16BD2B1A00530F89 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		CED4A68316BB4D3800269A5C /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
 		CED4A68416BB4D3800269A5C /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
 		CED4A68616BB4DC000269A5C /* NewsModel+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NewsModel+Parse.h"; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 				CEEB6D5216BA0E44004C8A8C /* libGoogleAdMobAds.a in Frameworks */,
 				CEEB6D5416BA0E44004C8A8C /* libGoogleAnalytics.a in Frameworks */,
 				CEEB6D5516BA0E44004C8A8C /* libGoogleAnalytics_debug.a in Frameworks */,
+				CED2C80016BD2B1A00530F89 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +353,7 @@
 		2342863F16B8997300F05F6F /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				CED2C7FF16BD2B1A00530F89 /* SDWebImage.framework */,
 				CED4A71416BB646100269A5C /* TSMiniWebBrowser */,
 				CED4A68C16BB514D00269A5C /* iActiveRecord */,
 				CEEB6D2916BA0E44004C8A8C /* EGOCache */,
@@ -1051,6 +1055,10 @@
 		39E6532D16B74F7E00A5A37C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libraries\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fofoca/Fofoca-Prefix.pch";
 				INFOPLIST_FILE = "Fofoca/Fofoca-Info.plist";
@@ -1068,6 +1076,10 @@
 		39E6532E16B74F7E00A5A37C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libraries\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fofoca/Fofoca-Prefix.pch";
 				INFOPLIST_FILE = "Fofoca/Fofoca-Info.plist";

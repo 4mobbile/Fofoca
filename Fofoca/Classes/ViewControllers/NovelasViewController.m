@@ -7,6 +7,7 @@
 //
 
 #import "NovelasViewController.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface NovelasViewController ()
 
@@ -27,6 +28,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSIndexPath *indexPath = sender;
+    
+    if ([[segue identifier] isEqualToString:@"segueSelectedMovie"]) {
+//        MovieViewController *movieView = [segue destinationViewController];
+//        [movieView setMovie:[self.movies objectAtIndex:[indexPath row]]];
+//        [movieView setCinePopMovie:[CPMovie likeCinePopMovieWithGMMovie:movieView.movie cinePopMovies:self.cinePopMovies]];
+    }
+}
 
 
 #pragma mark - UITableViewDataSource
@@ -36,7 +47,9 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    EmissoraModel *emissora = [[EmissoraModel alloc] init];
+    emissora = [self.emissoras objectAtIndex:section];
+    return [emissora.novelas count];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -53,11 +66,33 @@
     
     cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
+    UILabel *novelaName = (UILabel *)[cell viewWithTag:121];
+    UILabel *novelaChapter = (UILabel *)[cell viewWithTag:122];
+    UIImageView *novelaImage = (UIImageView *)[cell viewWithTag:123];
+
+    EmissoraModel *emissora = [[EmissoraModel alloc] init];
+
+    emissora = [self.emissoras objectAtIndex:indexPath.section];
+
+    NovelaModel *novela = [[NovelaModel alloc] init];
+    
+    novela = [emissora.novelas objectAtIndex:indexPath.row];
+    novelaName.text = novela.name;
+    novelaChapter.text = novela.firstChapter;
+    
+    //TODO: Resolver problema de imagem por url.
+//    NSString *urlImage = novela.firstChapterImage;
+//    
+//    if (urlImage) {
+//        NSLog(@"url image >>> %@", urlImage);
+//        [novelaImage setImageWithURL:[NSURL URLWithString:urlImage]];
+//    }
+    
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 60;
+    return 90;
 }
 
 
@@ -65,7 +100,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:[tableView indexPathForSelectedRow] animated:NO];
-    [self performSegueWithIdentifier:@"segueNovelasToResume" sender:indexPath];
+    EmissoraModel *emissora = [[EmissoraModel alloc] init];
+    
+    emissora = [self.emissoras objectAtIndex:indexPath.section];
+    
+    NovelaModel *novela = [[NovelaModel alloc] init];
+    
+    novela = [emissora.novelas objectAtIndex:indexPath.row];
+
+    [self performSegueWithIdentifier:@"segueNovelasToResume" sender:novela.name];
 }
 
 @end

@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 #import "EmissoraModel+Parse.h"
 #import "NovelaModel+Parse.h"
+#import "NSString+PGString.h"
 
 @interface NovelasViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 

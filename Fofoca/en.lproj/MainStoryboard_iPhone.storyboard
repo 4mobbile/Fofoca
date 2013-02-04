@@ -338,7 +338,7 @@
                                             <rect key="frame" x="10" y="1" width="280" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="eyx-TK-T3Z">
+                                                <imageView userInteractionEnabled="NO" tag="123" contentMode="scaleToFill" id="eyx-TK-T3Z">
                                                     <rect key="frame" x="8" y="9" width="110" height="74"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
