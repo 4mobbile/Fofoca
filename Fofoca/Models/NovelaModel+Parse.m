@@ -27,10 +27,10 @@
             
             if (result != nil && ![result isKindOfClass:NSClassFromString(@"NSNull")]) {
                 for (NSDictionary *item in [YQL forceArrayWithId:[[result objectForKey:@"div"] objectForKey:@"ul"]]) {
-                    NSLog(@"description >>> %@", [item description]);
+                    NovelaModel *novela = [[NovelaModel alloc] init];
                     
-                }
-                for (NSDictionary *item in [result objectForKey:@"canal"]) {
+                    
+                    
                 }
             }
         }];
