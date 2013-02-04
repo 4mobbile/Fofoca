@@ -121,6 +121,7 @@
 		CEEB6D5A16BA0E44004C8A8C /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D4B16BA0E44004C8A8C /* NSString+MD5.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		CEEB6D5B16BA0E44004C8A8C /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEEB6D4C16BA0E44004C8A8C /* README.txt */; };
 		CEEB6D5C16BA0E44004C8A8C /* YQL.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D4F16BA0E44004C8A8C /* YQL.m */; };
+		CEFF54AA16BF50AE0035A6CA /* NovelaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF54A916BF50AD0035A6CA /* NovelaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -328,6 +329,8 @@
 		CEEB6D4C16BA0E44004C8A8C /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		CEEB6D4E16BA0E44004C8A8C /* YQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQL.h; sourceTree = "<group>"; };
 		CEEB6D4F16BA0E44004C8A8C /* YQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQL.m; sourceTree = "<group>"; };
+		CEFF54A816BF50AD0035A6CA /* NovelaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NovelaViewController.h; sourceTree = "<group>"; };
+		CEFF54A916BF50AD0035A6CA /* NovelaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NovelaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -445,6 +448,8 @@
 				CE985BBE16B8B5D900AEB045 /* NewsViewController.m */,
 				39E2DAEC16BA014600665601 /* FotogaleriaViewController.h */,
 				39E2DAED16BA014600665601 /* FotogaleriaViewController.m */,
+				CEFF54A816BF50AD0035A6CA /* NovelaViewController.h */,
+				CEFF54A916BF50AD0035A6CA /* NovelaViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -959,6 +964,7 @@
 				CED4A72516BB646100269A5C /* TSMiniWebBrowser.m in Sources */,
 				AC87CB2816BC47B300849AF0 /* EGOCache+PGCache.m in Sources */,
 				CEEB339116BCC1DF00D2B9D3 /* NSString+PGString.m in Sources */,
+				CEFF54AA16BF50AE0035A6CA /* NovelaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
