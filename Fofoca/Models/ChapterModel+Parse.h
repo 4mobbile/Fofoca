@@ -16,7 +16,7 @@
 
 @interface ChapterModel (Parse)
 
-+ (NSArray *)parseChaptersWithDictionary:(NSDictionary *)dic;
++ (NSArray *)parseChaptersWithNovela:(NSString *)nameNovela;
 + (ChapterModel *)parseChapter:(NSDictionary *)dic;
 
 @end

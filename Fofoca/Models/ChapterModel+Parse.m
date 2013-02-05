@@ -10,23 +10,49 @@
 
 @implementation ChapterModel (Parse)
 
-+ (NSArray *)parseChaptersWithDictionary:(NSDictionary *)dic {
++ (NSArray *)parseChaptersWithNovela:(NSString *)nameNovela {
     NSMutableArray *chapters = [[NSMutableArray alloc] init];
-    for (NSDictionary *item in [YQL forceArrayWithId:[[[dic objectForKey:@"div"] objectForKey:@"ul"] objectForKey:@"li"]]) {
-        ChapterModel *chapter = [[ChapterModel alloc] init];
-        chapter = [ChapterModel parseChapter:item];
-        [chapters addObject:chapter];
+    NSString *url = K_YQL_NOVELA_FUXICO;
+    
+    url = [url stringByReplacingOccurrencesOfString:@"%@" withString:[self ajustNameNovelaWithString:nameNovela]];
+        
+    @try {
+        [EGOCache setYQL:url withTimeoutInterval:K_CACHE_TIME onSuccessPerform:^(NSString *content, NSError *error) {
+            NSDictionary *dic = [content objectFromJSONString];
+            NSDictionary *result = [[dic objectForKey:@"query"] objectForKey:@"results"];
+                        
+            for (NSDictionary *item in [YQL forceArrayWithId:[[result objectForKey:@"div"] objectForKey:@"ul"]]) {
+                for (NSDictionary *itemLi in [YQL forceArrayWithId:[item objectForKey:@"li"]]) {
+                    ChapterModel *chapter = [[ChapterModel alloc] init];
+                    chapter = [ChapterModel parseChapter:itemLi];
+                    [chapters addObject:chapter];
+                }
+            }
+        }];
     }
-    return chapters;
+    @catch (NSException *exception) {
+        NSLog(@"Erro no parseNovela: %@", [exception description]);
+    }
+    @finally {
+        return chapters;
+    }
 }
 
 + (ChapterModel *)parseChapter:(NSDictionary *)dic {
     ChapterModel *chapter = [[ChapterModel alloc] init];
-    chapter.title = [[[[dic objectForKey:@"h2"] objectForKey:@"a"] objectForKey:@"content"] objectForKey:@"content"];
+    chapter.title = [[[dic objectForKey:@"h2"] objectForKey:@"a"] objectForKey:@"content"];
     chapter.exhibitionAt = [[dic objectForKey:@"h6"] objectForKey:@"strong"];
-    chapter.image = [NSString stringWithFormat:@"https://ofuxico.terra.com.br%@", [[[dic objectForKey:@"a"] objectForKey:@"img"] objectForKey:@"src"]];;
-    chapter.url = [NSString stringWithFormat:@"https://ofuxico.terra.com.br%@", [[[dic objectForKey:@"h2"] objectForKey:@"a"] objectForKey:@"href"]];;
+    chapter.image = [NSString stringWithFormat:@"https://ofuxico.terra.com.br%@", [[[dic objectForKey:@"a"] objectForKey:@"img"] objectForKey:@"src"]];
+    chapter.url = [NSString stringWithFormat:@"https://ofuxico.terra.com.br%@", [[[dic objectForKey:@"h2"] objectForKey:@"a"] objectForKey:@"href"]];
+    
     return chapter;
+}
+
++ (NSString *)ajustNameNovelaWithString:(NSString *)name {
+    name = [name lowercaseString];
+    name = [name stringByReplacingOccurrencesOfString:@" " withString:@"-"];
+    name = [name removePonctuationFromString];
+    return name;
 }
 
 @end

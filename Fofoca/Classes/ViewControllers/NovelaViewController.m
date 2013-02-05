@@ -20,8 +20,8 @@
     [super viewDidLoad];
 	[self changeTitleNavigationBarForNovelaName:self.novelaName];
     
-    self.chapters = [NovelaModel parseChaptersWithNovela:self.novelaName];
-//    NSLog(@"contando >>> %i", [self.chapters count]);
+    self.chapters = [ChapterModel parseChaptersWithNovela:self.novelaName];
+    NSLog(@"contando >>> %i", [self.chapters count]);
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,6 +38,61 @@
     [navBarTitle setTextColor:[UIColor whiteColor]];
     [navBarTitle setText:novelaName];
     [[self navigationItem] setTitleView:navBarTitle];
+}
+
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.chapters count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellIdentifier = @"chapterCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+    }
+    
+    cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    UILabel *chapterTitle = (UILabel *)[cell viewWithTag:112];
+    UILabel *chapterDate = (UILabel *)[cell viewWithTag:113];
+    UIImageView *chapterImage = (UIImageView *)[cell viewWithTag:111];
+    
+    ChapterModel *chapter = [[ChapterModel alloc] init];
+    
+    chapter = [self.chapters objectAtIndex:indexPath.row];
+        
+    chapterTitle.text = chapter.title;
+    chapterDate.text = chapter.exhibitionAt;
+    
+    //TODO: Resolver problema de imagem por url.
+    //    NSString *urlImage = novela.firstChapterImage;
+    //
+    //    if (urlImage) {
+    //        NSLog(@"url image >>> %@", urlImage);
+    //        [novelaImage setImageWithURL:[NSURL URLWithString:urlImage]];
+    //    }
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 90;
+}
+
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:[tableView indexPathForSelectedRow] animated:NO];
+//    [self performSegueWithIdentifier:@"segueNovelasToResume" sender:indexPath];
 }
 
 @end

@@ -10,7 +10,7 @@
 #import "EmissoraModel+Parse.h"
 #import "NovelaModel+Parse.h"
 
-@interface NovelaViewController : UIViewController
+@interface NovelaViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic, strong) NSString *novelaName;
 @property(nonatomic, strong) NSArray *chapters;
