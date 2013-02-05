@@ -72,13 +72,11 @@
     chapterTitle.text = chapter.title;
     chapterDate.text = chapter.exhibitionAt;
     
-    //TODO: Resolver problema de imagem por url.
-    //    NSString *urlImage = novela.firstChapterImage;
-    //
-    //    if (urlImage) {
-    //        NSLog(@"url image >>> %@", urlImage);
-    //        [novelaImage setImageWithURL:[NSURL URLWithString:urlImage]];
-    //    }
+    NSString *urlImage = chapter.image;
+    
+    if (urlImage) {
+        [chapterImage setImageWithURL:[NSURL URLWithString:urlImage]];
+    }
     
     return cell;
 }

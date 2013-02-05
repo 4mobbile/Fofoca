@@ -7,7 +7,6 @@
 //
 
 #import "NovelasViewController.h"
-#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface NovelasViewController ()
 
@@ -87,13 +86,11 @@
     novelaName.text = novela.name;
     novelaChapter.text = novela.firstChapter;
     
-    //TODO: Resolver problema de imagem por url.
-//    NSString *urlImage = novela.firstChapterImage;
-//    
-//    if (urlImage) {
-//        NSLog(@"url image >>> %@", urlImage);
-//        [novelaImage setImageWithURL:[NSURL URLWithString:urlImage]];
-//    }
+    NSString *urlImage = novela.firstChapterImage;
+        
+    if (urlImage) {
+        [novelaImage setImageWithURL:[NSURL URLWithString:urlImage]];
+    }
     
     return cell;
 }
