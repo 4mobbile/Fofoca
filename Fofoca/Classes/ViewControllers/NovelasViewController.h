@@ -16,6 +16,8 @@
 
 @interface NovelasViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UITableView *novelasTableView;
+
 @property (nonatomic, strong) NSArray *emissoras;
 @property (nonatomic, strong) NSArray *novelas;
 

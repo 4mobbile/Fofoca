@@ -25,9 +25,13 @@
                     
                     emissora.name = [[[[item objectForKey:@"div"] objectForKey:@"h4"] objectForKey:@"span"] objectForKey:@"content"];
                     
+//                    NSLog(@"nome da emissora >>> %@", [emissora name]);
+                    
                     [novelas removeAllObjects];
                     
                     for (NSDictionary *itemLi in [YQL forceArrayWithId:[[item objectForKey:@"ul"] objectForKey:@"li"]]) {
+                        
+//                        NSLog(@"item desc >>> %@", [itemLi description]);
                         
                         NovelaModel *novela = [[NovelaModel alloc] init];
                         

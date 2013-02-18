@@ -51,7 +51,7 @@
 + (NSString *)ajustNameNovelaWithString:(NSString *)name {
     name = [name lowercaseString];
     name = [name stringByReplacingOccurrencesOfString:@" " withString:@"-"];
-    name = [name removePonctuationFromString];
+    name = [name removePonctuationWithHifenFromString];
     return name;
 }
 

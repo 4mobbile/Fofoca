@@ -14,6 +14,7 @@
 
 - (BOOL)containsString:(NSString*)substring;
 
+- (NSString*) removePonctuationWithHifenFromString;
 - (NSString*) removePonctuationFromString;
 - (NSString *) formatingDateMonth;
 
