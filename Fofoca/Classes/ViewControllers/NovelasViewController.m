@@ -19,6 +19,7 @@
     [super viewDidLoad];
 	
     self.emissoras = [EmissoraModel parseEmissora];
+    [self.novelasTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning

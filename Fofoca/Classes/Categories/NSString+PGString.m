@@ -21,7 +21,7 @@
     return found;
 }
 
--(NSString*) removePonctuationFromString {
+- (NSString*) removePonctuationWithHifenFromString {
     //remove any accents and punctuation;
     NSString *a = self;
     a=[[NSString alloc] initWithData:[a dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES] encoding:NSASCIIStringEncoding];
@@ -29,7 +29,22 @@
     a=[a stringByReplacingOccurrencesOfString:@" " withString:@""];
     a=[a stringByReplacingOccurrencesOfString:@"'" withString:@""];
     a=[a stringByReplacingOccurrencesOfString:@"`" withString:@""];
-//    a=[a stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    a=[a stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    a=[a stringByReplacingOccurrencesOfString:@"_" withString:@""];
+    a=[a stringByReplacingOccurrencesOfString:@"?" withString:@""];
+    a=[a stringByReplacingOccurrencesOfString:@"ç" withString:@"c"];
+    a=[a lowercaseString];
+    return a;
+}
+
+- (NSString*) removePonctuationFromString {
+    //remove any accents and punctuation;
+    NSString *a = self;
+    a=[[NSString alloc] initWithData:[a dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES] encoding:NSASCIIStringEncoding];
+    
+    a=[a stringByReplacingOccurrencesOfString:@" " withString:@""];
+    a=[a stringByReplacingOccurrencesOfString:@"'" withString:@""];
+    a=[a stringByReplacingOccurrencesOfString:@"`" withString:@""];
     a=[a stringByReplacingOccurrencesOfString:@"_" withString:@""];
     a=[a stringByReplacingOccurrencesOfString:@"?" withString:@""];    
     a=[a stringByReplacingOccurrencesOfString:@"ç" withString:@"c"];
