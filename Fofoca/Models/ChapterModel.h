@@ -14,5 +14,6 @@
 @property (nonatomic, copy) NSString *image;
 @property (nonatomic, copy) NSString *exhibitionAt;
 @property (nonatomic, copy) NSString *url;
+@property (nonatomic, copy) NSString *resume;
 
 @end

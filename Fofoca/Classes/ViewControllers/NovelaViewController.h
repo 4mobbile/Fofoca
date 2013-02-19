@@ -11,6 +11,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "EmissoraModel+Parse.h"
 #import "NovelaModel+Parse.h"
+#import "ChapterViewController.h"
 
 @interface NovelaViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 

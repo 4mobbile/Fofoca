@@ -41,6 +41,16 @@
     [[self navigationItem] setTitleView:navBarTitle];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    if ([[segue identifier] isEqualToString:@"segueNovelaToChapter"]) {
+        ChapterModel *chapter = sender;
+        ChapterViewController *chapterVC = [segue destinationViewController];
+        chapterVC.chapter = chapter;
+    }
+}
+
 
 #pragma mark - UITableViewDataSource
 
@@ -91,7 +101,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:[tableView indexPathForSelectedRow] animated:NO];
-//    [self performSegueWithIdentifier:@"segueNovelasToResume" sender:indexPath];
+    ChapterModel *chapter = [[ChapterModel alloc] init];
+    chapter = [self.chapters objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"segueNovelaToChapter" sender:chapter];
 }
 
 @end

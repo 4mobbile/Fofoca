@@ -17,5 +17,8 @@
 @interface ChapterModel (Parse)
 
 + (ChapterModel *)parseChapter:(NSDictionary *)dic;
++ (ChapterModel *)parseResumeAndImageChapterWithChapter:(ChapterModel *)chapter;
++ (NSString *)ajustNameNovelaWithString:(NSString *)name;
++ (NSString *)ajustUrlWithString:(NSString *)url;
 
 @end

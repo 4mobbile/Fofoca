@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <QuartzCore/QuartzCore.h>
+#import "ChapterModel+Parse.h"
 
 @interface ChapterViewController : UIViewController
+
+@property (strong, nonatomic) ChapterModel *chapter;
 
 @property (weak, nonatomic) IBOutlet UILabel *chapterTitle;
 @property (weak, nonatomic) IBOutlet UIImageView *chapterImage;

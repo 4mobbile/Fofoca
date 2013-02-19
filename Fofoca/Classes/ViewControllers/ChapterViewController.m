@@ -17,7 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    self.chapter = [ChapterModel parseResumeAndImageChapterWithChapter:[self chapter]];
+    self.chapterTitle.text = self.chapter.title;
+    self.chapterResume.text = self.chapter.resume;
+    
+    if (self.chapter.image) {
+        [self.chapterImage setImageWithURL:[NSURL URLWithString:self.chapter.image] placeholderImage:nil];
+    }
 }
 
 - (void)didReceiveMemoryWarning
