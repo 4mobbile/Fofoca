@@ -52,6 +52,22 @@
     return a;
 }
 
+- (NSString*) buildNovelaNameForUrl {
+    //remove any accents and punctuation;
+    NSString *a = self;
+    a=[[NSString alloc] initWithData:[a dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES] encoding:NSASCIIStringEncoding];
+    
+    a=[a stringByReplacingOccurrencesOfString:@"'" withString:@""];
+    a=[a stringByReplacingOccurrencesOfString:@"`" withString:@""];
+    a=[a stringByReplacingOccurrencesOfString:@"_" withString:@""];
+    a=[a stringByReplacingOccurrencesOfString:@"?" withString:@""];
+    a=[a stringByReplacingOccurrencesOfString:@"ç" withString:@"c"];
+    a=[a stringByReplacingOccurrencesOfString:@" " withString:@"-"];
+    a=[a lowercaseString];
+    return a;
+}
+
+
 + (NSString *)removeSpecialCharacteres:(NSString *)string {
     NSData *temp = [string dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     return [[NSString alloc] initWithData:temp encoding:NSASCIIStringEncoding];

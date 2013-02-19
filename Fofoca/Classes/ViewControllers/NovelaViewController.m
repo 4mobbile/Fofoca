@@ -20,8 +20,10 @@
     [super viewDidLoad];
 	[self changeTitleNavigationBarForNovelaName:self.novelaName];
     
-    self.chapters = [ChapterModel parseChaptersWithNovela:self.novelaName];
+    self.chapters = [ChapterModel parseChaptersWithNovela:[self.novelaName buildNovelaNameForUrl]];
     NSLog(@"contando >>> %i", [self.chapters count]);
+    
+    [self.novelaTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning

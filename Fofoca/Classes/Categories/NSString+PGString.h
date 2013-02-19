@@ -16,6 +16,7 @@
 
 - (NSString*) removePonctuationWithHifenFromString;
 - (NSString*) removePonctuationFromString;
+- (NSString*) buildNovelaNameForUrl;
 - (NSString *) formatingDateMonth;
 
 + (NSString *)removeSpecialCharacteres:(NSString *)string;

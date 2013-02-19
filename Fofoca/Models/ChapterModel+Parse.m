@@ -49,9 +49,7 @@
 }
 
 + (NSString *)ajustNameNovelaWithString:(NSString *)name {
-    name = [name lowercaseString];
-    name = [name stringByReplacingOccurrencesOfString:@" " withString:@"-"];
-    name = [name removePonctuationWithHifenFromString];
+    name = [name buildNovelaNameForUrl];
     return name;
 }
 

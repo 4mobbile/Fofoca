@@ -25,7 +25,7 @@
                     
                     emissora.name = [[[[item objectForKey:@"div"] objectForKey:@"h4"] objectForKey:@"span"] objectForKey:@"content"];
                     
-//                    NSLog(@"nome da emissora >>> %@", [emissora name]);
+                    NSLog(@"nome da emissora >>> %@", [emissora name]);
                     
                     [novelas removeAllObjects];
                     
