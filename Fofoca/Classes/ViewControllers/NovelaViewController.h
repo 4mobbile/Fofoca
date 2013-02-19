@@ -14,6 +14,8 @@
 
 @interface NovelaViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UITableView *novelaTableView;
+
 @property(nonatomic, strong) NSString *novelaName;
 @property(nonatomic, strong) NSArray *chapters;
 

@@ -356,6 +356,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Novela" id="Kmw-qq-y4f"/>
+                    <connections>
+                        <outlet property="novelaTableView" destination="LcO-eh-7NL" id="QxR-MJ-GtH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEH-yn-JzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
