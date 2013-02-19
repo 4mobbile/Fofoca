@@ -115,6 +115,7 @@
 		CED4A72416BB646100269A5C /* reload_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4A71B16BB646100269A5C /* reload_icon@2x.png */; };
 		CED4A72516BB646100269A5C /* TSMiniWebBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A71D16BB646100269A5C /* TSMiniWebBrowser.m */; };
 		CED4A72616BB646100269A5C /* TSMiniWebBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4A71E16BB646100269A5C /* TSMiniWebBrowser.xib */; };
+		CEE08B7616D3051700C3712D /* ChapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE08B7516D3051700C3712D /* ChapterViewController.m */; };
 		CEEB339116BCC1DF00D2B9D3 /* NSString+PGString.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB339016BCC1DF00D2B9D3 /* NSString+PGString.m */; };
 		CEEB6D1F16B9F370004C8A8C /* EmissoraModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D1E16B9F370004C8A8C /* EmissoraModel.m */; };
 		CEEB6D2216B9F47F004C8A8C /* EmissoraModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D2116B9F47F004C8A8C /* EmissoraModel+Parse.m */; };
@@ -312,6 +313,8 @@
 		CED4A71C16BB646100269A5C /* TSMiniWebBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMiniWebBrowser.h; sourceTree = "<group>"; };
 		CED4A71D16BB646100269A5C /* TSMiniWebBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMiniWebBrowser.m; sourceTree = "<group>"; };
 		CED4A71E16BB646100269A5C /* TSMiniWebBrowser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSMiniWebBrowser.xib; sourceTree = "<group>"; };
+		CEE08B7416D3051700C3712D /* ChapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterViewController.h; sourceTree = "<group>"; };
+		CEE08B7516D3051700C3712D /* ChapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterViewController.m; sourceTree = "<group>"; };
 		CEEB338F16BCC1DF00D2B9D3 /* NSString+PGString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PGString.h"; sourceTree = "<group>"; };
 		CEEB339016BCC1DF00D2B9D3 /* NSString+PGString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PGString.m"; sourceTree = "<group>"; };
 		CEEB6D1D16B9F370004C8A8C /* EmissoraModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmissoraModel.h; sourceTree = "<group>"; };
@@ -483,6 +486,8 @@
 				39E2DAED16BA014600665601 /* FotogaleriaViewController.m */,
 				CEFF54A816BF50AD0035A6CA /* NovelaViewController.h */,
 				CEFF54A916BF50AD0035A6CA /* NovelaViewController.m */,
+				CEE08B7416D3051700C3712D /* ChapterViewController.h */,
+				CEE08B7516D3051700C3712D /* ChapterViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1013,6 +1018,7 @@
 				CEFF54AA16BF50AE0035A6CA /* NovelaViewController.m in Sources */,
 				CED20CBF16C065150040B6B8 /* ChapterModel.m in Sources */,
 				CED20CC216C065280040B6B8 /* ChapterModel+Parse.m in Sources */,
+				CEE08B7616D3051700C3712D /* ChapterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
