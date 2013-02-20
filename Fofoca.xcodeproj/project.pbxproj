@@ -51,6 +51,7 @@
 		AC87CB2816BC47B300849AF0 /* EGOCache+PGCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AC87CB2716BC47B300849AF0 /* EGOCache+PGCache.m */; };
 		CE086B8D16D46E7A0065FDD2 /* SignoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE086B8C16D46E7A0065FDD2 /* SignoModel.m */; };
 		CE086B9016D46EA30065FDD2 /* SignoModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CE086B8F16D46EA30065FDD2 /* SignoModel+Parse.m */; };
+		CE086B9316D4725D0065FDD2 /* HoroscopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE086B9216D4725D0065FDD2 /* HoroscopViewController.m */; };
 		CE985BBF16B8B5D900AEB045 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE985BBE16B8B5D900AEB045 /* NewsViewController.m */; };
 		CED20CBF16C065150040B6B8 /* ChapterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CED20CBE16C065150040B6B8 /* ChapterModel.m */; };
 		CED20CC216C065280040B6B8 /* ChapterModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CED20CC116C065280040B6B8 /* ChapterModel+Parse.m */; };
@@ -196,6 +197,8 @@
 		CE086B8C16D46E7A0065FDD2 /* SignoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignoModel.m; sourceTree = "<group>"; };
 		CE086B8E16D46EA30065FDD2 /* SignoModel+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignoModel+Parse.h"; sourceTree = "<group>"; };
 		CE086B8F16D46EA30065FDD2 /* SignoModel+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignoModel+Parse.m"; sourceTree = "<group>"; };
+		CE086B9116D4725D0065FDD2 /* HoroscopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoroscopViewController.h; sourceTree = "<group>"; };
+		CE086B9216D4725D0065FDD2 /* HoroscopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoroscopViewController.m; sourceTree = "<group>"; };
 		CE985BBB16B8A78000AEB045 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		CE985BBD16B8B5D900AEB045 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		CE985BBE16B8B5D900AEB045 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
@@ -486,14 +489,16 @@
 				2342865016B89D5E00F05F6F /* HomeViewController.m */,
 				2342865116B89D5E00F05F6F /* NovelasViewController.h */,
 				2342865216B89D5E00F05F6F /* NovelasViewController.m */,
-				CE985BBD16B8B5D900AEB045 /* NewsViewController.h */,
-				CE985BBE16B8B5D900AEB045 /* NewsViewController.m */,
-				39E2DAEC16BA014600665601 /* FotogaleriaViewController.h */,
-				39E2DAED16BA014600665601 /* FotogaleriaViewController.m */,
 				CEFF54A816BF50AD0035A6CA /* NovelaViewController.h */,
 				CEFF54A916BF50AD0035A6CA /* NovelaViewController.m */,
 				CEE08B7416D3051700C3712D /* ChapterViewController.h */,
 				CEE08B7516D3051700C3712D /* ChapterViewController.m */,
+				CE985BBD16B8B5D900AEB045 /* NewsViewController.h */,
+				CE985BBE16B8B5D900AEB045 /* NewsViewController.m */,
+				39E2DAEC16BA014600665601 /* FotogaleriaViewController.h */,
+				39E2DAED16BA014600665601 /* FotogaleriaViewController.m */,
+				CE086B9116D4725D0065FDD2 /* HoroscopViewController.h */,
+				CE086B9216D4725D0065FDD2 /* HoroscopViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1031,6 +1036,7 @@
 				CEE08B7616D3051700C3712D /* ChapterViewController.m in Sources */,
 				CE086B8D16D46E7A0065FDD2 /* SignoModel.m in Sources */,
 				CE086B9016D46EA30065FDD2 /* SignoModel+Parse.m in Sources */,
+				CE086B9316D4725D0065FDD2 /* HoroscopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

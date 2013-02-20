@@ -32,7 +32,7 @@
 
 #define K_YQL_FOTOGALERIA @"http://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20FROM%20html%20WHERE%20url%3D%22http%3A%2F%2Fego.globo.com%2Fpraia%2Ffotos%2F2013%2F02%2Frodrigo-lombardi-e-claudia-raia-gravam-salve-jorge-em-praia-do-rio.html%22%20AND%20(xpath%3D%22%2F%2Fspan%5B%40class%3D'data-criacao'%5D%22%20OR%20xpath%3D%22%2F%2Fspan%5B%40class%3D'data-atualizacao'%5D%22%20OR%20xpath%3D%22%2F%2Fh1%5B%40class%3D'titulo'%5D%22%20OR%20xpath%3D%22%2F%2Fdiv%5B%40class%3D'subtitulo'%5D%2Fp%22%20OR%20xpath%3D%22%2F%2Fdiv%5B%40class%3D'fotos'%5D%2Ful%2Fli%22)%20AND%20charset%3D%22utf-8%22&format=json&callback="
 
-#define K_YQL_SIGNO @"http://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20FROM%20html%20WHERE%20url%20%3D%20%22https%3A%2F%2Fhoroscopo.ego.globo.com%2Fsignos%2Fpeixes%22%20AND%20xpath%20%3D%20%22%2F%2Fdiv%5B%40class%20%3D%20'miolo'%5D%2Fp%22%20AND%20charset%3D%22utf-8%22&format=json&callback="
+#define K_YQL_SIGNO @"http://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20FROM%20html%20WHERE%20url%20%3D%20%22https%3A%2F%2Fhoroscopo.ego.globo.com%2Fsignos%2F%@%22%20AND%20xpath%20%3D%20%22%2F%2Fdiv%5B%40class%20%3D%20'miolo'%5D%2Fp%22%20AND%20charset%3D%22utf-8%22&format=json&callback="
 
 
 //---------------------------------------------------------------------------------------------------------

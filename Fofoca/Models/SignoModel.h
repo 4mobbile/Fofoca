@@ -10,4 +10,10 @@
 
 @interface SignoModel : NSObject
 
+@property (nonatomic, copy) NSString *date;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *url;
+@property (nonatomic, copy) NSString *resume;
+@property (nonatomic, copy) NSString *loveResume;
+
 @end

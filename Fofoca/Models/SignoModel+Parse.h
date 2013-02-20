@@ -7,7 +7,14 @@
 //
 
 #import "SignoModel.h"
+#import "Global.h"
+#import "JSONKit.h"
+#import "EGOCache+PGCache.h"
+#import "YQL.h"
 
 @interface SignoModel (Parse)
+
++ (SignoModel *)parseSignoByYQLWithName:(NSString *)nameSigno;
+
 
 @end
