@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SignoViewController.h"
 
 @interface HoroscopViewController : UIViewController
+
+- (IBAction)goToSignoVC:(id)sender;
 
 @end

@@ -52,6 +52,7 @@
 		CE086B8D16D46E7A0065FDD2 /* SignoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE086B8C16D46E7A0065FDD2 /* SignoModel.m */; };
 		CE086B9016D46EA30065FDD2 /* SignoModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CE086B8F16D46EA30065FDD2 /* SignoModel+Parse.m */; };
 		CE086B9316D4725D0065FDD2 /* HoroscopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE086B9216D4725D0065FDD2 /* HoroscopViewController.m */; };
+		CE086B9616D4745C0065FDD2 /* SignoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE086B9516D4745C0065FDD2 /* SignoViewController.m */; };
 		CE985BBF16B8B5D900AEB045 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE985BBE16B8B5D900AEB045 /* NewsViewController.m */; };
 		CED20CBF16C065150040B6B8 /* ChapterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CED20CBE16C065150040B6B8 /* ChapterModel.m */; };
 		CED20CC216C065280040B6B8 /* ChapterModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CED20CC116C065280040B6B8 /* ChapterModel+Parse.m */; };
@@ -199,6 +200,8 @@
 		CE086B8F16D46EA30065FDD2 /* SignoModel+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignoModel+Parse.m"; sourceTree = "<group>"; };
 		CE086B9116D4725D0065FDD2 /* HoroscopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoroscopViewController.h; sourceTree = "<group>"; };
 		CE086B9216D4725D0065FDD2 /* HoroscopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoroscopViewController.m; sourceTree = "<group>"; };
+		CE086B9416D4745C0065FDD2 /* SignoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignoViewController.h; sourceTree = "<group>"; };
+		CE086B9516D4745C0065FDD2 /* SignoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignoViewController.m; sourceTree = "<group>"; };
 		CE985BBB16B8A78000AEB045 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		CE985BBD16B8B5D900AEB045 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		CE985BBE16B8B5D900AEB045 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
@@ -499,6 +502,8 @@
 				39E2DAED16BA014600665601 /* FotogaleriaViewController.m */,
 				CE086B9116D4725D0065FDD2 /* HoroscopViewController.h */,
 				CE086B9216D4725D0065FDD2 /* HoroscopViewController.m */,
+				CE086B9416D4745C0065FDD2 /* SignoViewController.h */,
+				CE086B9516D4745C0065FDD2 /* SignoViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1037,6 +1042,7 @@
 				CE086B8D16D46E7A0065FDD2 /* SignoModel.m in Sources */,
 				CE086B9016D46EA30065FDD2 /* SignoModel+Parse.m in Sources */,
 				CE086B9316D4725D0065FDD2 /* HoroscopViewController.m in Sources */,
+				CE086B9616D4745C0065FDD2 /* SignoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
