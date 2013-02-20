@@ -40,9 +40,11 @@
                     chapter.image = [NSString stringWithFormat:@"%@%@", K_URL_FUXICO, [[item objectForKey:@"img"]  objectForKey:@"src"]];
                 }
                 
-//                if ([[item objectForKey:@"class"] isEqual:@"HOTWordsTxt"]) {
-//                    chapter.resume = [item objectForKey:@"p"];
-//                }
+                if ([[item objectForKey:@"class"] isEqual:@"HOTWordsTxt"]) {
+                    NSLog(@"item >>> %@", [[item objectForKey:@"p"] description]);
+//                    NSArray *pArray = [YQL forceArrayWithId:[result objectForKey:@"div"]];
+//                    chapter.resume = [pArray firstObjectCommonWithArray:pArray];
+                }
 
             }
         }];
