@@ -49,6 +49,8 @@
 		39E6531816B74F7D00A5A37C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E6531616B74F7D00A5A37C /* MainStoryboard_iPhone.storyboard */; };
 		39E6531B16B74F7D00A5A37C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E6531916B74F7D00A5A37C /* MainStoryboard_iPad.storyboard */; };
 		AC87CB2816BC47B300849AF0 /* EGOCache+PGCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AC87CB2716BC47B300849AF0 /* EGOCache+PGCache.m */; };
+		CE086B8D16D46E7A0065FDD2 /* SignoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE086B8C16D46E7A0065FDD2 /* SignoModel.m */; };
+		CE086B9016D46EA30065FDD2 /* SignoModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CE086B8F16D46EA30065FDD2 /* SignoModel+Parse.m */; };
 		CE985BBF16B8B5D900AEB045 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE985BBE16B8B5D900AEB045 /* NewsViewController.m */; };
 		CED20CBF16C065150040B6B8 /* ChapterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CED20CBE16C065150040B6B8 /* ChapterModel.m */; };
 		CED20CC216C065280040B6B8 /* ChapterModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CED20CC116C065280040B6B8 /* ChapterModel+Parse.m */; };
@@ -190,6 +192,10 @@
 		39E6531A16B74F7D00A5A37C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		AC87CB2616BC47B300849AF0 /* EGOCache+PGCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EGOCache+PGCache.h"; sourceTree = "<group>"; };
 		AC87CB2716BC47B300849AF0 /* EGOCache+PGCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EGOCache+PGCache.m"; sourceTree = "<group>"; };
+		CE086B8B16D46E7A0065FDD2 /* SignoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignoModel.h; sourceTree = "<group>"; };
+		CE086B8C16D46E7A0065FDD2 /* SignoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignoModel.m; sourceTree = "<group>"; };
+		CE086B8E16D46EA30065FDD2 /* SignoModel+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignoModel+Parse.h"; sourceTree = "<group>"; };
+		CE086B8F16D46EA30065FDD2 /* SignoModel+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignoModel+Parse.m"; sourceTree = "<group>"; };
 		CE985BBB16B8A78000AEB045 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		CE985BBD16B8B5D900AEB045 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		CE985BBE16B8B5D900AEB045 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
@@ -638,6 +644,10 @@
 				CED4A68416BB4D3800269A5C /* NewsModel.m */,
 				CED4A68616BB4DC000269A5C /* NewsModel+Parse.h */,
 				CED4A68716BB4DC000269A5C /* NewsModel+Parse.m */,
+				CE086B8B16D46E7A0065FDD2 /* SignoModel.h */,
+				CE086B8C16D46E7A0065FDD2 /* SignoModel.m */,
+				CE086B8E16D46EA30065FDD2 /* SignoModel+Parse.h */,
+				CE086B8F16D46EA30065FDD2 /* SignoModel+Parse.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1019,6 +1029,8 @@
 				CED20CBF16C065150040B6B8 /* ChapterModel.m in Sources */,
 				CED20CC216C065280040B6B8 /* ChapterModel+Parse.m in Sources */,
 				CEE08B7616D3051700C3712D /* ChapterViewController.m in Sources */,
+				CE086B8D16D46E7A0065FDD2 /* SignoModel.m in Sources */,
+				CE086B9016D46EA30065FDD2 /* SignoModel+Parse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
