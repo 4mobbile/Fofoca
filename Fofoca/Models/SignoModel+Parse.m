@@ -16,7 +16,7 @@
     NSString *url = [K_YQL_SIGNO stringByReplacingOccurrencesOfString:@"%@" withString:nameSigno];
     
     @try {
-        [EGOCache setYQL:url withTimeoutInterval:300 onSuccessPerform:^(NSString *content, NSError *error) {
+        [EGOCache setYQL:url withTimeoutInterval:300 onSuccessPerform:^(NSString *content, BOOL isNew, NSDate *createdAt, NSError *error) {
             NSDictionary *dic = [content objectFromJSONString];
             NSDictionary *result = [[dic objectForKey:@"query"] objectForKey:@"results"];
             

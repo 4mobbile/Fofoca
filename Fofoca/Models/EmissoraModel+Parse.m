@@ -15,7 +15,7 @@
     NSMutableArray *novelas = [[NSMutableArray alloc] init];
     
     @try {
-        [EGOCache setYQL:K_YQL_EMISSORAS_FUXICO withTimeoutInterval:300 onSuccessPerform:^(NSString *content, NSError *error) {
+        [EGOCache setYQL:K_YQL_EMISSORAS_FUXICO withTimeoutInterval:300 onSuccessPerform:^(NSString *content, BOOL isNew, NSDate *createdAt, NSError *error) {
             NSDictionary *dic = [content objectFromJSONString];
             NSDictionary *result = [[dic objectForKey:@"query"] objectForKey:@"results"];
             

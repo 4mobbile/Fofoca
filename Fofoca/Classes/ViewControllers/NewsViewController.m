@@ -101,7 +101,7 @@
 #pragma mark - Loading
 
 - (void)loadingListWithNews {
-    [EGOCache setUrl:K_URL_NEWS withTimeoutInterval:K_CACHE_TIME_GOOGLE_READER onSuccessPerform:^(NSString *content, NSError *error) {
+    [EGOCache setUrl:K_URL_NEWS withTimeoutInterval:K_CACHE_TIME_GOOGLE_READER onSuccessPerform:^(NSString *content, BOOL isNew, NSError *error) {
         if (error == nil) {
             NSDictionary *dic = [content objectFromJSONString];
             self.news = [NewsModel parseWithArray:[dic objectForKey:@"items"]];

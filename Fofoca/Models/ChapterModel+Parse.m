@@ -27,7 +27,7 @@
     url = [url stringByReplacingOccurrencesOfString:@"%@" withString:chapterUrl];
         
     @try {
-        [EGOCache setYQL:url withTimeoutInterval:K_CACHE_TIME onSuccessPerform:^(NSString *content, NSError *error) {
+        [EGOCache setYQL:url withTimeoutInterval:K_CACHE_TIME onSuccessPerform:^(NSString *content, BOOL isNew, NSDate *createdAt, NSError *error) {
             NSDictionary *dic = [content objectFromJSONString];
             NSDictionary *result = [[dic objectForKey:@"query"] objectForKey:@"results"];
 
