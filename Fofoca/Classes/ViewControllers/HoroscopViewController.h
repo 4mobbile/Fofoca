@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Global.h"
 #import "SignoViewController.h"
 
 @interface HoroscopViewController : UIViewController

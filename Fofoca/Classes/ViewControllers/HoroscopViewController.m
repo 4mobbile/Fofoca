@@ -42,7 +42,50 @@
 }
 
 - (IBAction)goToSignoVC:(id)sender {
-    [self performSegueWithIdentifier:@"segueHoroscopToSigno" sender:@"peixes"];
+    NSString *signo = [[NSString alloc] init];
+    
+    switch ([sender tag]) {
+        case 1:
+            signo = K_CAPRICORNIO;
+            break;
+        case 2:
+            signo = K_AQUARIO;
+            break;
+        case 3:
+            signo = K_PEIXES;
+            break;
+        case 4:
+            signo = K_ARIES;
+            break;
+        case 5:
+            signo = K_TOURO;
+            break;
+        case 6:
+            signo = K_GEMEOS;
+            break;
+        case 7:
+            signo = K_CANCER;
+            break;
+        case 8:
+            signo = K_LEAO;
+            break;
+        case 9:
+            signo = K_VIRGEM;
+            break;
+        case 10:
+            signo = K_LIBRA;
+            break;
+        case 11:
+            signo = K_ESCORPIAO;
+            break;
+        case 12:
+            signo = K_SAGITARIO;
+            break;
+            
+        default:
+            break;
+    }
+    [self performSegueWithIdentifier:@"segueHoroscopToSigno" sender:signo];
 }
 
 @end

@@ -119,6 +119,7 @@
 		CED4A72416BB646100269A5C /* reload_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4A71B16BB646100269A5C /* reload_icon@2x.png */; };
 		CED4A72516BB646100269A5C /* TSMiniWebBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4A71D16BB646100269A5C /* TSMiniWebBrowser.m */; };
 		CED4A72616BB646100269A5C /* TSMiniWebBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4A71E16BB646100269A5C /* TSMiniWebBrowser.xib */; };
+		CED742D916D9B2D60009B6A7 /* signos.gif in Resources */ = {isa = PBXBuildFile; fileRef = CED742D816D9B2D60009B6A7 /* signos.gif */; };
 		CEE08B7616D3051700C3712D /* ChapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE08B7516D3051700C3712D /* ChapterViewController.m */; };
 		CEEB339116BCC1DF00D2B9D3 /* NSString+PGString.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB339016BCC1DF00D2B9D3 /* NSString+PGString.m */; };
 		CEEB6D1F16B9F370004C8A8C /* EmissoraModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB6D1E16B9F370004C8A8C /* EmissoraModel.m */; };
@@ -325,6 +326,7 @@
 		CED4A71C16BB646100269A5C /* TSMiniWebBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMiniWebBrowser.h; sourceTree = "<group>"; };
 		CED4A71D16BB646100269A5C /* TSMiniWebBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMiniWebBrowser.m; sourceTree = "<group>"; };
 		CED4A71E16BB646100269A5C /* TSMiniWebBrowser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSMiniWebBrowser.xib; sourceTree = "<group>"; };
+		CED742D816D9B2D60009B6A7 /* signos.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = signos.gif; sourceTree = "<group>"; };
 		CEE08B7416D3051700C3712D /* ChapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterViewController.h; sourceTree = "<group>"; };
 		CEE08B7516D3051700C3712D /* ChapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterViewController.m; sourceTree = "<group>"; };
 		CEEB338F16BCC1DF00D2B9D3 /* NSString+PGString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PGString.h"; sourceTree = "<group>"; };
@@ -422,6 +424,7 @@
 		2342864116B89B1C00F05F6F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CED742D816D9B2D60009B6A7 /* signos.gif */,
 				39E2DAC316BA00C400665601 /* Fotogaleria */,
 				2342864216B89B1C00F05F6F /* menu */,
 				2342864316B89B1C00F05F6F /* navbar */,
@@ -965,6 +968,7 @@
 				CED4A72316BB646100269A5C /* reload_icon.png in Resources */,
 				CED4A72416BB646100269A5C /* reload_icon@2x.png in Resources */,
 				CED4A72616BB646100269A5C /* TSMiniWebBrowser.xib in Resources */,
+				CED742D916D9B2D60009B6A7 /* signos.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
