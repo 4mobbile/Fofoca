@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Flickr.h"
 #import "FlickrPhoto.h"
+#import "EGOGalleryModel+Parse.h"
 
 @interface FotogaleriaViewController : UIViewController <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
