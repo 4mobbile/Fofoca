@@ -18,6 +18,8 @@
 
 #define K_URL_FUXICO @"http://ofuxico.terra.com.br"
 
+#define K_URL_EGO @"http://ego.globo.com/"
+
 
 //---------------------------------------------------------------------------------------------------------
 // YQL

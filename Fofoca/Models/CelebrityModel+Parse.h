@@ -7,6 +7,9 @@
 //
 
 #import "CelebrityModel.h"
+#import "JSONKit.h"
+#import "EGOCache+PGCache.h"
+#import "YQL.h"
 
 @interface CelebrityModel (Parse)
 
