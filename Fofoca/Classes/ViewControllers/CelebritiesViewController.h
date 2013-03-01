@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CelebrityModel+Parse.h"
 
-@interface CelebritiesViewController : UIViewController
+@interface CelebritiesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *celebritiesTableView;
+
+@property (nonatomic, strong) NSArray *celebrities;
 
 @end

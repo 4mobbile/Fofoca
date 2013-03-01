@@ -14,19 +14,12 @@
 
 @implementation CelebritiesViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    self.celebrities = [CelebrityModel parseCelebrity];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,5 +27,50 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.celebrities count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellIdentifier = @"celebrityCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+    }
+    
+    cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    UILabel *celebrityName = (UILabel *)[cell viewWithTag:121];
+    
+    CelebrityModel *celebrity = [[CelebrityModel alloc] init];
+    
+    celebrity = [self.celebrities objectAtIndex:indexPath.row];
+    
+    celebrityName.text = celebrity.name;
+
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 44;
+}
+
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:[tableView indexPathForSelectedRow] animated:NO];
+//    [self performSegueWithIdentifier:@"segueCelebritiesToCelebrity" sender:indexPath];
+}
+
 
 @end

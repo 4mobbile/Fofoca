@@ -31,7 +31,9 @@
             CelebrityModel *celebrity = [[CelebrityModel alloc] init];
             
             celebrity.name = [[item objectForKey:@"a"] objectForKey:@"content"];
-            celebrity.link = [[item objectForKey:@"a"] objectForKey:@"href"];
+            
+            NSString *url = [[item objectForKey:@"a"] objectForKey:@"href"];
+            celebrity.link = [NSString stringWithFormat:@"%@%@", K_URL_EGO, url];
             
             [celebrities addObject:celebrity];
         }
