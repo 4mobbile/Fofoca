@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     
-    self.celebrities = [CelebrityModel parseCelebrity];
+    self.celebrities = [CelebrityModel parseTopCelebrities];
 
 }
 

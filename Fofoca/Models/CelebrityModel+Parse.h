@@ -13,8 +13,10 @@
 
 @interface CelebrityModel (Parse)
 
-+ (NSArray *)parseCelebrity;
-+ (NSArray *)parseWithDictionary:(NSDictionary *)dictionary;
++ (NSArray *)parseCelebrities;
++ (NSArray *)parseCelebritiesWithDictionary:(NSDictionary *)dictionary;
 
++ (NSArray *)parseTopCelebrities;
++ (NSArray *)parseTopCelebritiesWithDictionary:(NSDictionary *)dictionary;
 
 @end

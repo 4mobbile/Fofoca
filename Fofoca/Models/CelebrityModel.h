@@ -11,6 +11,7 @@
 @interface CelebrityModel : NSObject
 
 @property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *urlPhoto;
 @property (nonatomic, copy) NSString *link;
 
 @end
