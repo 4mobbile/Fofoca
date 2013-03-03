@@ -11,8 +11,8 @@
 
 @interface CelebritiesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UITableView *celebritiesTableView;
+@property (weak, nonatomic) IBOutlet UITableView *topCelebritiesTableView;
 
-@property (nonatomic, strong) NSArray *celebrities;
+@property (nonatomic, strong) NSArray *topCelebrities;
 
 @end

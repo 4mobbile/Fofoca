@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     
-    self.celebrities = [CelebrityModel parseTopCelebrities];
+    self.topCelebrities = [CelebrityModel parseTopCelebrities];
 
 }
 
@@ -36,11 +36,11 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.celebrities count];
+    return [self.topCelebrities count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellIdentifier = @"celebrityCell";
+    static NSString *cellIdentifier = @"topCelebrityCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
 
     if (!cell) {
@@ -53,7 +53,7 @@
     
     CelebrityModel *celebrity = [[CelebrityModel alloc] init];
     
-    celebrity = [self.celebrities objectAtIndex:indexPath.row];
+    celebrity = [self.topCelebrities objectAtIndex:indexPath.row];
     
     celebrityName.text = celebrity.name;
 

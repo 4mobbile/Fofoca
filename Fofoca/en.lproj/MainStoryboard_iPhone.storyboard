@@ -456,7 +456,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="celebrityCell" id="d3g-bM-Nuk" customClass="celebrityCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="topCelebrityCell" id="d3g-bM-Nuk" customClass="celebrityCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -507,17 +507,17 @@
                     </view>
                     <navigationItem key="navigationItem" title="Famosos" id="t37-Rb-7te"/>
                     <connections>
-                        <outlet property="celebritiesTableView" destination="EKJ-Ul-UWB" id="n7Z-HC-imu"/>
+                        <outlet property="topCelebritiesTableView" destination="EKJ-Ul-UWB" id="vN0-Q6-Igj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JPx-Do-vxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1260" y="112"/>
         </scene>
-        <!--View Controller - Lista de Famosos-->
+        <!--List Celebrities View Controller - Lista de Famosos-->
         <scene sceneID="gal-Ua-dnl">
             <objects>
-                <viewController id="25C-gH-Fct" sceneMemberID="viewController">
+                <viewController id="25C-gH-Fct" customClass="ListCelebritiesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r4E-o1-IhQ">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -527,21 +527,37 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="HTj-tb-hJL">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="celebrityCell" id="HTj-tb-hJL">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4XX-1r-AYm">
+                                                    <rect key="frame" x="20" y="11" width="280" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="25C-gH-Fct" id="HtQ-DV-zP0"/>
+                                    <outlet property="delegate" destination="25C-gH-Fct" id="rvH-zC-G2D"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Lista de Famosos" id="bPR-xq-5p9"/>
+                    <connections>
+                        <outlet property="celebritiesTableView" destination="N3B-rP-5x1" id="olG-cn-JI0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TnN-LK-F09" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -821,7 +837,7 @@
         <class className="CelebritiesViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CelebritiesViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="celebritiesTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="topCelebritiesTableView" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="ChapterViewController" superclassName="UIViewController">
@@ -863,6 +879,12 @@
                 <relationship kind="action" name="goToSignoVC:"/>
             </relationships>
         </class>
+        <class className="ListCelebritiesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ListCelebritiesViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="celebritiesTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
         <class className="NewsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsViewController.h"/>
             <relationships>
@@ -897,6 +919,9 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
