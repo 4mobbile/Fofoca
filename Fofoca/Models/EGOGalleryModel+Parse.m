@@ -30,7 +30,6 @@
         
         for (NSDictionary *galleryNode in root) {
             EGOGalleryModel *gallery = [[EGOGalleryModel alloc] init];
-            gallery.photos = [[NSMutableArray alloc] init];
             
             gallery.title = [[[galleryNode objectForKey:@"p"] objectForKey:@"a"] objectForKey:@"content"];
             gallery.link = [[[galleryNode objectForKey:@"p"] objectForKey:@"a"] objectForKey:@"href"];
@@ -69,7 +68,6 @@
 
 + (EGOGalleryModel *)parseSpecicPhotoGalleryWithDictionary:(NSDictionary *)dictionary {
     EGOGalleryModel *gallery = [[EGOGalleryModel alloc] init];
-    gallery.photos = [[NSMutableArray alloc] init];
     
     @try {
         NSDictionary *root = [[dictionary objectForKey:@"query"] objectForKey:@"results"];

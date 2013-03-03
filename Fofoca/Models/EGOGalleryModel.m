@@ -10,6 +10,16 @@
 
 @implementation EGOGalleryModel
 
+- (id)init {
+    self = [super init];
+    
+    if (self) {
+        self.photos = [[NSMutableArray alloc] init];
+    }
+    
+    return self;
+}
+
 + (NSString *)urlForParseFromSpecifcPhotoGallery:(NSString *)specifcPhotoGallery {
     return [K_YQL_FOTOGALERIA stringByReplacingOccurrencesOfString:@"%@" withString:specifcPhotoGallery];
 }
