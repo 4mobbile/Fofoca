@@ -59,6 +59,7 @@
 		CE295B3316E03A930086F4DE /* CelebrityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE295B3216E03A930086F4DE /* CelebrityModel.m */; };
 		CE295B3616E03AB00086F4DE /* CelebrityModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CE295B3516E03AB00086F4DE /* CelebrityModel+Parse.m */; };
 		CE295B3916E0426D0086F4DE /* CelebritiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE295B3816E0426D0086F4DE /* CelebritiesViewController.m */; };
+		CE93245016E38EC800FF7A99 /* ListCelebritiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93244F16E38EC800FF7A99 /* ListCelebritiesViewController.m */; };
 		CE985BBF16B8B5D900AEB045 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE985BBE16B8B5D900AEB045 /* NewsViewController.m */; };
 		CED20CBF16C065150040B6B8 /* ChapterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CED20CBE16C065150040B6B8 /* ChapterModel.m */; };
 		CED20CC216C065280040B6B8 /* ChapterModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CED20CC116C065280040B6B8 /* ChapterModel+Parse.m */; };
@@ -221,6 +222,8 @@
 		CE295B3516E03AB00086F4DE /* CelebrityModel+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CelebrityModel+Parse.m"; sourceTree = "<group>"; };
 		CE295B3716E0426D0086F4DE /* CelebritiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CelebritiesViewController.h; sourceTree = "<group>"; };
 		CE295B3816E0426D0086F4DE /* CelebritiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CelebritiesViewController.m; sourceTree = "<group>"; };
+		CE93244E16E38EC800FF7A99 /* ListCelebritiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCelebritiesViewController.h; sourceTree = "<group>"; };
+		CE93244F16E38EC800FF7A99 /* ListCelebritiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListCelebritiesViewController.m; sourceTree = "<group>"; };
 		CE985BBB16B8A78000AEB045 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		CE985BBD16B8B5D900AEB045 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		CE985BBE16B8B5D900AEB045 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
@@ -527,6 +530,8 @@
 				CE086B9516D4745C0065FDD2 /* SignoViewController.m */,
 				CE295B3716E0426D0086F4DE /* CelebritiesViewController.h */,
 				CE295B3816E0426D0086F4DE /* CelebritiesViewController.m */,
+				CE93244E16E38EC800FF7A99 /* ListCelebritiesViewController.h */,
+				CE93244F16E38EC800FF7A99 /* ListCelebritiesViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1083,6 +1088,7 @@
 				CE295B3316E03A930086F4DE /* CelebrityModel.m in Sources */,
 				CE295B3616E03AB00086F4DE /* CelebrityModel+Parse.m in Sources */,
 				CE295B3916E0426D0086F4DE /* CelebritiesViewController.m in Sources */,
+				CE93245016E38EC800FF7A99 /* ListCelebritiesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
