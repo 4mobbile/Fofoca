@@ -33,7 +33,7 @@
             celebrity.name = [[item objectForKey:@"a"] objectForKey:@"content"];
             
             NSString *url = [[item objectForKey:@"a"] objectForKey:@"href"];
-            celebrity.link = [NSString stringWithFormat:@"%@%@", K_URL_EGO, url];
+            celebrity.link = [NSString stringWithFormat:@"%@/%@", K_URL_EGO, url];
             
             [celebrities addObject:celebrity];
         }
@@ -76,7 +76,7 @@
                 if ([[itemDiv objectForKey:@"class"] isEqualToString:@"agrupador-textual"]) {
                     celebrity.name = [[[itemDiv objectForKey:@"h3"] objectForKey:@"a"] objectForKey:@"content"];
                     NSString *url = [[[itemDiv objectForKey:@"h3"] objectForKey:@"a"] objectForKey:@"href"];
-                    celebrity.link = [NSString stringWithFormat:@"%@%@", K_URL_EGO, url];
+                    celebrity.link = [NSString stringWithFormat:@"%@/%@", K_URL_EGO, url];
                     
                     NSLog(@"name >>> %@", celebrity.name);
                 }
