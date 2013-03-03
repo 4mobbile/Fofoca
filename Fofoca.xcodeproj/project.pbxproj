@@ -18,6 +18,7 @@
 		2342865D16B89DAE00F05F6F /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2342865916B89DAE00F05F6F /* second@2x.png */; };
 		2355CE0416DD931F00B4430E /* EGOPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2355CE0316DD931F00B4430E /* EGOPhotoModel.m */; };
 		2355CE0A16DD945200B4430E /* EGOGalleryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2355CE0916DD945200B4430E /* EGOGalleryModel.m */; };
+		236D7E9116E398E600CFDBB0 /* EGOPhotoModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 236D7E9016E398E600CFDBB0 /* EGOPhotoModel+Parse.m */; };
 		23A465AF16DECFA500AEB800 /* EGOGalleryModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A465AE16DECFA500AEB800 /* EGOGalleryModel+Parse.m */; };
 		3915994D16BB59CE007F5B71 /* FlickPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DE229C16BB4D690044C315 /* FlickPhotoCell.m */; };
 		3915994E16BB59F1007F5B71 /* FotogaleriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E2DAED16BA014600665601 /* FotogaleriaViewController.m */; };
@@ -164,6 +165,8 @@
 		2355CE0316DD931F00B4430E /* EGOPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOPhotoModel.m; sourceTree = "<group>"; };
 		2355CE0816DD945200B4430E /* EGOGalleryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOGalleryModel.h; sourceTree = "<group>"; };
 		2355CE0916DD945200B4430E /* EGOGalleryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOGalleryModel.m; sourceTree = "<group>"; };
+		236D7E8F16E398E600CFDBB0 /* EGOPhotoModel+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EGOPhotoModel+Parse.h"; sourceTree = "<group>"; };
+		236D7E9016E398E600CFDBB0 /* EGOPhotoModel+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EGOPhotoModel+Parse.m"; sourceTree = "<group>"; };
 		23A465AD16DECFA500AEB800 /* EGOGalleryModel+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EGOGalleryModel+Parse.h"; sourceTree = "<group>"; };
 		23A465AE16DECFA500AEB800 /* EGOGalleryModel+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EGOGalleryModel+Parse.m"; sourceTree = "<group>"; };
 		39DE229B16BB4D690044C315 /* FlickPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickPhotoCell.h; sourceTree = "<group>"; };
@@ -688,6 +691,8 @@
 				CE086B8F16D46EA30065FDD2 /* SignoModel+Parse.m */,
 				2355CE0216DD931F00B4430E /* EGOPhotoModel.h */,
 				2355CE0316DD931F00B4430E /* EGOPhotoModel.m */,
+				236D7E8F16E398E600CFDBB0 /* EGOPhotoModel+Parse.h */,
+				236D7E9016E398E600CFDBB0 /* EGOPhotoModel+Parse.m */,
 				2355CE0816DD945200B4430E /* EGOGalleryModel.h */,
 				2355CE0916DD945200B4430E /* EGOGalleryModel.m */,
 				23A465AD16DECFA500AEB800 /* EGOGalleryModel+Parse.h */,
@@ -1089,6 +1094,7 @@
 				CE295B3616E03AB00086F4DE /* CelebrityModel+Parse.m in Sources */,
 				CE295B3916E0426D0086F4DE /* CelebritiesViewController.m in Sources */,
 				CE93245016E38EC800FF7A99 /* ListCelebritiesViewController.m in Sources */,
+				236D7E9116E398E600CFDBB0 /* EGOPhotoModel+Parse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

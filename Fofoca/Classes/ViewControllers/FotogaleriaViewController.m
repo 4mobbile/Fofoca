@@ -39,6 +39,11 @@
         NSLog(@"title [%i]: %@, %@", [gallery.photos count], gallery.title, gallery.link);
     }
     
+    if (galleries && [galleries objectAtIndex:0]) {
+        
+    }
+    
+    
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_cork.png"]];
     
     UIImage *navBarImage = [[UIImage imageNamed:@"navbar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(27, 27, 27, 27)];
