@@ -36,7 +36,7 @@
     NSArray *galleries = [EGOGalleryModel parse];
     
     for (EGOGalleryModel *gallery in galleries) {
-        NSLog(@"title [%i]: %@", [gallery.photos count], gallery.title);
+        NSLog(@"title [%i]: %@, %@", [gallery.photos count], gallery.title, gallery.link);
     }
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_cork.png"]];

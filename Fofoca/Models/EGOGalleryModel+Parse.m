@@ -32,6 +32,7 @@
             
             gallery.title = [[[galleryNode objectForKey:@"p"] objectForKey:@"a"] objectForKey:@"content"];
             gallery.link = [[[galleryNode objectForKey:@"p"] objectForKey:@"a"] objectForKey:@"href"];
+            gallery.link = [NSString stringWithFormat:@"%@%@", K_URL_EGO, gallery.link];
             
             for (NSDictionary *photoNode in [[galleryNode objectForKey:@"ul"] objectForKey:@"li"]) {
                 EGOPhotoModel *photo = [[EGOPhotoModel alloc] init];
