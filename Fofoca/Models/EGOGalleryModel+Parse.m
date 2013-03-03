@@ -35,11 +35,8 @@
             gallery.link = [[[galleryNode objectForKey:@"p"] objectForKey:@"a"] objectForKey:@"href"];
             gallery.link = [NSString stringWithFormat:@"%@%@", K_URL_EGO, gallery.link];
             
-            for (NSDictionary *photoNode in [[galleryNode objectForKey:@"ul"] objectForKey:@"li"]) {
-                EGOPhotoModel *photo = [[EGOPhotoModel alloc] init];
-                photo.thumb = [[[photoNode objectForKey:@"a"] objectForKey:@"img"] objectForKey:@"src"];
-                
-                [gallery.photos addObject:photo];
+            for (NSDictionary *photoNode in [[galleryNode objectForKey:@"ul"] objectForKey:@"li"]) {                
+                [gallery.photos addObject:[EGOPhotoModel parseThumbsWithDictionary:photoNode]];
             }
             
             [galleries addObject:gallery];

@@ -10,6 +10,7 @@
 
 @interface EGOPhotoModel (Parse)
 
++ (EGOPhotoModel *)parseThumbsWithDictionary:(NSDictionary *)dicionary;
 + (EGOPhotoModel *)parseWithDictionary:(NSDictionary *)dicionary;
 
 @end

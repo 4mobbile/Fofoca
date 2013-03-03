@@ -10,6 +10,14 @@
 
 @implementation EGOPhotoModel (Parse)
 
++ (EGOPhotoModel *)parseThumbsWithDictionary:(NSDictionary *)dicionary {
+    EGOPhotoModel *photo = [[EGOPhotoModel alloc] init];
+    
+    photo.thumb = [[[dicionary objectForKey:@"a"] objectForKey:@"img"] objectForKey:@"src"];
+    
+    return photo;
+}
+
 + (EGOPhotoModel *)parseWithDictionary:(NSDictionary *)dicionary {
     EGOPhotoModel *photo = [[EGOPhotoModel alloc] init];
     
