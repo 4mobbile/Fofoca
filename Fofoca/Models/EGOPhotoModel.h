@@ -13,4 +13,8 @@
 @property (nonatomic, copy) NSString *thumb;
 @property (nonatomic, copy) NSString *link;
 
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *imageUrl;
+@property (nonatomic, copy) NSString *credit;
+
 @end

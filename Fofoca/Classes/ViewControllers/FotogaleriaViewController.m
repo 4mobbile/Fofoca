@@ -39,8 +39,13 @@
         NSLog(@"title [%i]: %@, %@", [gallery.photos count], gallery.title, gallery.link);
     }
     
-    if (galleries && [galleries objectAtIndex:0]) {
+    if (galleries && [galleries count] > 0) {
+        EGOGalleryModel *gallery = [EGOGalleryModel parseWithSpecicPhotoGallery:[[galleries objectAtIndex:0] link]];
+        NSLog(@"quantidade de fotos: %i", [gallery.photos count]);
         
+        for (EGOPhotoModel *photo in gallery.photos) {
+            NSLog(@"title: %@ [%@/%@]", [photo title], [photo imageUrl], [photo credit]);
+        }
     }
     
     

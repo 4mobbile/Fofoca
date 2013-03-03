@@ -10,6 +10,8 @@
 
 @implementation EGOGalleryModel (Parse)
 
+//TODO: Metodo nao deve existir no modelo....
+//Esse codigo deve estar presente no viewcontroller
 + (NSArray *)parse {
     __block NSArray *galleries = [[NSArray alloc] init];
     
@@ -49,6 +51,50 @@
     }
     @finally {
         return galleries;
+    }
+}
+
+//TODO: Metodo nao deve existir no modelo....
+//Esse codigo deve estar presente no viewcontroller
++ (EGOGalleryModel *)parseWithSpecicPhotoGallery:(NSString *)specicPhotoGallery {
+    __block EGOGalleryModel *gallery = [[EGOGalleryModel alloc] init];
+    specicPhotoGallery = [EGOGalleryModel urlForParseFromSpecifcPhotoGallery:specicPhotoGallery];
+    
+    [EGOCache setYQL:specicPhotoGallery withTimeoutInterval:K_CACHE_TIME onSuccessPerform:^(NSString *content, BOOL isNew, NSDate *createdAt, NSError *error) {
+        gallery = [EGOGalleryModel parseSpecicPhotoGalleryWithDictionary:[content objectFromJSONString]];
+    }];
+    
+    return gallery;
+}
+
++ (EGOGalleryModel *)parseSpecicPhotoGalleryWithDictionary:(NSDictionary *)dictionary {
+    EGOGalleryModel *gallery = [[EGOGalleryModel alloc] init];
+    gallery.photos = [[NSMutableArray alloc] init];
+    
+    @try {
+        NSDictionary *root = [[dictionary objectForKey:@"query"] objectForKey:@"results"];
+        
+        if ([root objectForKey:@"span"] && [[[root objectForKey:@"span"] objectAtIndex:0] objectForKey:@"content"]) {
+            gallery.createdAt = [[[root objectForKey:@"span"] objectAtIndex:0] objectForKey:@"content"];
+        }
+
+        if ([root objectForKey:@"span"] && [[[root objectForKey:@"span"] objectAtIndex:1] objectForKey:@"content"]) {
+            gallery.updatedAt = [[[root objectForKey:@"span"] objectAtIndex:1] objectForKey:@"content"];
+        }
+        
+        if ([root objectForKey:@"h1"]) {
+            gallery.title = [[root objectForKey:@"h1"] objectForKey:@"content"];
+        }
+        
+        for (NSDictionary *dictionaryPhoto in [root objectForKey:@"li"]) {
+            [gallery.photos addObject:[EGOPhotoModel parseWithDictionary:dictionaryPhoto]];
+        }
+    }
+    @catch (NSException *exception) {
+        NSLog(@"Erro no SpecifcEGOGallery: %@", [exception description]);
+    }
+    @finally {
+        return gallery;
     }
 }
 

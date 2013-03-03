@@ -10,6 +10,8 @@
 
 @implementation EGOGalleryModel
 
-
++ (NSString *)urlForParseFromSpecifcPhotoGallery:(NSString *)specifcPhotoGallery {
+    return [K_YQL_FOTOGALERIA stringByReplacingOccurrencesOfString:@"%@" withString:specifcPhotoGallery];
+}
 
 @end

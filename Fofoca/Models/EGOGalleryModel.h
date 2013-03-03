@@ -14,4 +14,9 @@
 @property (nonatomic, copy) NSString *link;
 @property (nonatomic, strong) NSMutableArray *photos;
 
+@property (nonatomic, copy) NSString *createdAt;
+@property (nonatomic, copy) NSString *updatedAt;
+
++ (NSString *)urlForParseFromSpecifcPhotoGallery:(NSString *)specifcPhotoGallery;
+
 @end

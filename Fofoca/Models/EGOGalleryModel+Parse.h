@@ -8,11 +8,14 @@
 
 #import "EGOGalleryModel.h"
 #import "EGOCache+PGCache.h"
-#import "EGOPhotoModel.h"
+#import "EGOPhotoModel+Parse.h"
 
 @interface EGOGalleryModel (Parse)
 
 + (NSArray *)parse;
 + (NSArray *)parseWithDictionary:(NSDictionary *)dictionary;
+
++ (EGOGalleryModel *)parseWithSpecicPhotoGallery:(NSString *)specicPhotoGallery;
++ (EGOGalleryModel *)parseSpecicPhotoGalleryWithDictionary:(NSDictionary *)dictionary;
 
 @end

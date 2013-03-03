@@ -10,4 +10,15 @@
 
 @implementation EGOPhotoModel (Parse)
 
++ (EGOPhotoModel *)parseWithDictionary:(NSDictionary *)dicionary {
+    EGOPhotoModel *photo = [[EGOPhotoModel alloc] init];
+    
+    photo.title = [[dicionary objectForKey:@"img"] objectForKey:@"alt"];
+    photo.imageUrl = [[dicionary objectForKey:@"img"] objectForKey:@"src"];
+    
+    photo.credit = [[[[[dicionary objectForKey:@"div"] objectForKey:@"div"] objectForKey:@"span"] lastObject] objectForKey:@"content"];
+    
+    return photo;
+}
+
 @end
