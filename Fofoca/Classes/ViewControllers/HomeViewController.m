@@ -12,6 +12,7 @@
 #import "NovelaModel+Parse.h"
 #import "YQL.h"
 #import "NSString+PGString.h"
+#import "PKRevealController.h"
 
 @interface HomeViewController ()
 
@@ -22,7 +23,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIImage *menuIcon = [UIImage imageNamed:@"menu_icon"];
+    if (self.navigationController.revealController.type & PKRevealControllerTypeLeft)
+    {
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:menuIcon landscapeImagePhone:menuIcon style:UIBarButtonItemStylePlain target:self action:@selector(showLeftView:)];
+    }   
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -33,6 +40,21 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
+}
+
+
+#pragma mark - Actions
+
+- (void)showLeftView:(id)sender
+{
+    if (self.navigationController.revealController.focusedController == self.navigationController.revealController.leftViewController)
+    {
+        [self.navigationController.revealController showViewController:self.navigationController.revealController.frontViewController];
+    }
+    else
+    {
+        [self.navigationController.revealController showViewController:self.navigationController.revealController.leftViewController];
+    }
 }
 
 

@@ -52,6 +52,12 @@
 		39E6530F16B74F7D00A5A37C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E6530E16B74F7D00A5A37C /* AppDelegate.m */; };
 		39E6531816B74F7D00A5A37C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E6531616B74F7D00A5A37C /* MainStoryboard_iPhone.storyboard */; };
 		39E6531B16B74F7D00A5A37C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E6531916B74F7D00A5A37C /* MainStoryboard_iPad.storyboard */; };
+		782FC29316E39A730041AA8A /* PKRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 782FC28E16E39A730041AA8A /* PKRevealController.m */; };
+		782FC29416E39A730041AA8A /* PKRevealControllerContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 782FC29016E39A730041AA8A /* PKRevealControllerContainerView.m */; };
+		782FC29516E39A730041AA8A /* UIViewController+PKRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 782FC29216E39A730041AA8A /* UIViewController+PKRevealController.m */; };
+		782FC29816E39AEC0041AA8A /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 782FC29716E39AEC0041AA8A /* MenuViewController.m */; };
+		782FC29C16E39DCE0041AA8A /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 782FC29A16E39DCE0041AA8A /* menu_icon.png */; };
+		782FC29D16E39DCE0041AA8A /* menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 782FC29B16E39DCE0041AA8A /* menu_icon@2x.png */; };
 		AC87CB2816BC47B300849AF0 /* EGOCache+PGCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AC87CB2716BC47B300849AF0 /* EGOCache+PGCache.m */; };
 		CE086B8D16D46E7A0065FDD2 /* SignoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE086B8C16D46E7A0065FDD2 /* SignoModel.m */; };
 		CE086B9016D46EA30065FDD2 /* SignoModel+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CE086B8F16D46EA30065FDD2 /* SignoModel+Parse.m */; };
@@ -209,6 +215,16 @@
 		39E6530E16B74F7D00A5A37C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		39E6531716B74F7D00A5A37C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		39E6531A16B74F7D00A5A37C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		782FC28D16E39A730041AA8A /* PKRevealController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKRevealController.h; sourceTree = "<group>"; };
+		782FC28E16E39A730041AA8A /* PKRevealController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKRevealController.m; sourceTree = "<group>"; };
+		782FC28F16E39A730041AA8A /* PKRevealControllerContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKRevealControllerContainerView.h; sourceTree = "<group>"; };
+		782FC29016E39A730041AA8A /* PKRevealControllerContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKRevealControllerContainerView.m; sourceTree = "<group>"; };
+		782FC29116E39A730041AA8A /* UIViewController+PKRevealController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PKRevealController.h"; sourceTree = "<group>"; };
+		782FC29216E39A730041AA8A /* UIViewController+PKRevealController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PKRevealController.m"; sourceTree = "<group>"; };
+		782FC29616E39AEC0041AA8A /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		782FC29716E39AEC0041AA8A /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		782FC29A16E39DCE0041AA8A /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = "<group>"; };
+		782FC29B16E39DCE0041AA8A /* menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon@2x.png"; sourceTree = "<group>"; };
 		AC87CB2616BC47B300849AF0 /* EGOCache+PGCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EGOCache+PGCache.h"; sourceTree = "<group>"; };
 		AC87CB2716BC47B300849AF0 /* EGOCache+PGCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EGOCache+PGCache.m"; sourceTree = "<group>"; };
 		CE086B8B16D46E7A0065FDD2 /* SignoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignoModel.h; sourceTree = "<group>"; };
@@ -441,6 +457,7 @@
 				CEEB6D4916BA0E44004C8A8C /* NSString-MD5 */,
 				CEEB6D4D16BA0E44004C8A8C /* YQL */,
 				39E2DAFC16BA0A1A00665601 /* Flickr Interface */,
+				782FC28C16E39A1E0041AA8A /* PKRevealController */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -449,20 +466,13 @@
 			isa = PBXGroup;
 			children = (
 				CED742D816D9B2D60009B6A7 /* signos.gif */,
+				782FC29916E39D740041AA8A /* Menu */,
 				39E2DAC316BA00C400665601 /* Fotogaleria */,
-				2342864216B89B1C00F05F6F /* menu */,
 				2342864316B89B1C00F05F6F /* navbar */,
 				2342864416B89B1C00F05F6F /* splash */,
 				2342865516B89DAE00F05F6F /* tabbar */,
 			);
 			path = Images;
-			sourceTree = "<group>";
-		};
-		2342864216B89B1C00F05F6F /* menu */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = menu;
 			sourceTree = "<group>";
 		};
 		2342864316B89B1C00F05F6F /* navbar */ = {
@@ -517,6 +527,8 @@
 			children = (
 				2342864F16B89D5E00F05F6F /* HomeViewController.h */,
 				2342865016B89D5E00F05F6F /* HomeViewController.m */,
+				782FC29616E39AEC0041AA8A /* MenuViewController.h */,
+				782FC29716E39AEC0041AA8A /* MenuViewController.m */,
 				2342865116B89D5E00F05F6F /* NovelasViewController.h */,
 				2342865216B89D5E00F05F6F /* NovelasViewController.m */,
 				CEFF54A816BF50AD0035A6CA /* NovelaViewController.h */,
@@ -664,6 +676,28 @@
 				39E6530C16B74F7D00A5A37C /* Fofoca-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		782FC28C16E39A1E0041AA8A /* PKRevealController */ = {
+			isa = PBXGroup;
+			children = (
+				782FC28D16E39A730041AA8A /* PKRevealController.h */,
+				782FC28E16E39A730041AA8A /* PKRevealController.m */,
+				782FC28F16E39A730041AA8A /* PKRevealControllerContainerView.h */,
+				782FC29016E39A730041AA8A /* PKRevealControllerContainerView.m */,
+				782FC29116E39A730041AA8A /* UIViewController+PKRevealController.h */,
+				782FC29216E39A730041AA8A /* UIViewController+PKRevealController.m */,
+			);
+			path = PKRevealController;
+			sourceTree = "<group>";
+		};
+		782FC29916E39D740041AA8A /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				782FC29A16E39DCE0041AA8A /* menu_icon.png */,
+				782FC29B16E39DCE0041AA8A /* menu_icon@2x.png */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		CE985BBC16B8AD8E00AEB045 /* Models */ = {
@@ -1009,6 +1043,8 @@
 				CED4A72416BB646100269A5C /* reload_icon@2x.png in Resources */,
 				CED4A72616BB646100269A5C /* TSMiniWebBrowser.xib in Resources */,
 				CED742D916D9B2D60009B6A7 /* signos.gif in Resources */,
+				782FC29C16E39DCE0041AA8A /* menu_icon.png in Resources */,
+				782FC29D16E39DCE0041AA8A /* menu_icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1095,6 +1131,10 @@
 				CE295B3916E0426D0086F4DE /* CelebritiesViewController.m in Sources */,
 				CE93245016E38EC800FF7A99 /* ListCelebritiesViewController.m in Sources */,
 				236D7E9116E398E600CFDBB0 /* EGOPhotoModel+Parse.m in Sources */,
+				782FC29316E39A730041AA8A /* PKRevealController.m in Sources */,
+				782FC29416E39A730041AA8A /* PKRevealControllerContainerView.m in Sources */,
+				782FC29516E39A730041AA8A /* UIViewController+PKRevealController.m in Sources */,
+				782FC29816E39AEC0041AA8A /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
