@@ -36,9 +36,12 @@
 
 #define K_YQL_SIGNO @"http://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20FROM%20html%20WHERE%20url%20%3D%20%22https%3A%2F%2Fhoroscopo.ego.globo.com%2Fsignos%2F%@%22%20AND%20xpath%20%3D%20%22%2F%2Fdiv%5B%40class%20%3D%20'miolo'%5D%2Fp%22%20AND%20charset%3D%22ISO-8859-1%22&format=json&callback="
 
+//TODO alterar url, atualmente esta pegando lista da letra A
 #define K_YQL_LIST_CELEBRITY @"http://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20FROM%20html%20WHERE%20url%20%3D%20%22http%3A%2F%2Fego.globo.com%2Ffamosos%2Findex.html%22%20AND%20xpath%20%3D%20%22%2F%2Fdiv%5B%40id%20%3D%20'A'%5D%2Ful%2Fli%22%20AND%20charset%3D%22utf-8%22&format=json&callback="
 
 #define K_YQL_TOP_CELEBRITY @"http://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20FROM%20html%20WHERE%20url%20%3D%20%22http%3A%2F%2Fego.globo.com%2Ffamosos%2Findex.html%22%20AND%20xpath%20%3D%20%22%2F%2Ful%5B%40class%20%3D%20'famosos-importantes'%5D%2Fli%22%20AND%20charset%3D%22utf-8%22&format=json&callback="
+
+#define K_YQL_CELEBRITY @"http://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20FROM%20html%20WHERE%20url%20%3D%20%22http%3A%2F%2Fego.globo.com%2Ffamosos%2Ftudo-sobre%2Fdeborah-secco.html%22%20AND%20xpath%20%3D%20%22%2F%2Fdiv%5B%40class%20%3D%20'especificos'%5D%22%20AND%20charset%3D%22utf-8%22&format=json&callback="
 
 
 //---------------------------------------------------------------------------------------------------------
