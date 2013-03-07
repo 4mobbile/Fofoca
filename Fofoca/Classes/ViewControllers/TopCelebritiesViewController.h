@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CelebrityModel+Parse.h"
 
-@interface CelebritiesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface TopCelebritiesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *topCelebritiesTableView;
 

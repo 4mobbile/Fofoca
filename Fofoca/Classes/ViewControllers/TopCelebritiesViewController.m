@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 4Mobile. All rights reserved.
 //
 
-#import "CelebritiesViewController.h"
+#import "TopCelebritiesViewController.h"
 
-@interface CelebritiesViewController ()
+@interface TopCelebritiesViewController ()
 
 @end
 
-@implementation CelebritiesViewController
+@implementation TopCelebritiesViewController
 
 - (void)viewDidLoad
 {
